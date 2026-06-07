@@ -1,0 +1,129 @@
+---
+unit: unit-2
+topicId: protein-structure
+title: Protein structure — primary through quaternary
+blurb: The four levels of protein architecture and the bonds that stabilise each.
+estimatedMinutes: 14
+xp: 20
+learningObjectives:
+  - Distinguish the four levels of protein structure
+  - Identify which bonds or interactions stabilise each level
+  - Predict the effect of denaturing conditions on each level
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 4"
+  - "Satyanarayana Biochemistry, 5e, Ch. 4"
+---
+
+## Why the hierarchy matters
+
+A protein's three-dimensional shape *is* its function. A 1 °C shift in body temperature is enough to kill some enzymes; a single amino-acid swap can turn haemoglobin into sickle haemoglobin. For a pharmacy student this hierarchy explains why heat sterilisation works, why some drugs are formulated lyophilised, and why a "biosimilar" requires more validation than a generic small molecule.
+
+## Primary structure — the sequence
+
+Primary structure is the **linear amino-acid sequence**, conventionally written from the N-terminus (free α-amino group) to the C-terminus (free α-carboxyl group).
+
+The only bond holding it together is the **peptide bond** — a partial-double-bond amide formed by condensation between one AA's carboxyl and the next AA's amino. Three structural consequences flow from the partial double bond:
+
+1. **Planarity**: the six atoms of the peptide bond lie in a plane.
+2. **Rigidity**: rotation around the C–N bond is restricted.
+3. **Trans preference**: cis peptide bonds are strained (proline is the exception).
+
+```
+   O    H
+   ||   |
+   C — N
+  / \   \
+H₃N    R   ← rotation allowed at Cα-N and Cα-C (φ and ψ angles)
+```
+
+<KeyPoint>
+Primary structure encodes everything. The sequence determines folding (the Anfinsen experiment), which determines function. A single point mutation can abolish activity (e.g., HbS → sickle-cell disease) or alter drug metabolism (CYP2D6 polymorphisms in poor metabolisers).
+</KeyPoint>
+
+## Secondary structure — local patterns
+
+Local repeating geometries stabilised by **backbone hydrogen bonds** (between the C=O of one residue and the N-H of another). The R groups don't participate.
+
+### α-helix
+
+- A right-handed coil with 3.6 residues per turn.
+- H-bonds form between residue *i* and residue *i+4*.
+- Rises ~5.4 Å per turn, ~1.5 Å per residue.
+- Side chains point outward.
+
+**Helix breakers**: proline (rigid ring, no NH for H-bond) and glycine (too flexible).
+
+### β-sheet
+
+- Extended strands H-bonded side-by-side.
+- **Parallel** (N → C on both strands going the same way) or **antiparallel** (opposite). Antiparallel is slightly more stable.
+- Side chains alternate above and below the sheet plane.
+- Common in fibrous proteins (silk fibroin) and the cores of globular proteins.
+
+### β-turn and Ω-loops
+
+Short reversals (4 residues for β-turn) that let the polypeptide fold back on itself. Often contain proline (cis-peptide) and glycine (flexibility) precisely because they're geometrically constrained.
+
+<Mnemonic phrase="α-helix = αcademic (intramolecular, within a single strand). β-sheet = βetween (between strands).">
+Frame it physically: an α-helix's hydrogen bonds run *within* one polypeptide. A β-sheet's hydrogen bonds run *between* separate strands of the polypeptide (or between separate chains entirely).
+</Mnemonic>
+
+## Tertiary structure — the full 3D fold
+
+The overall 3D shape of a single polypeptide. Stabilised by **side-chain interactions**:
+
+| Interaction | Type | Strength | Where |
+| :--- | :--- | :--- | :--- |
+| Hydrophobic effect | Entropic | Strong (cumulative) | Non-polar Rs bury in core |
+| Hydrogen bonds | Electrostatic | Moderate | Polar Rs, often with water |
+| Ionic (salt bridges) | Electrostatic | Moderate | Asp/Glu ↔ Lys/Arg |
+| Disulphide bonds | Covalent | Strong | Between two cysteines (forms cystine) |
+| Van der Waals | Dispersion | Weak (cumulative) | Throughout the core |
+
+The **hydrophobic effect** is the dominant force. Burying non-polar side chains releases ordered water molecules — a large entropy gain that overwhelms the loss of conformational entropy in folding.
+
+<Callout variant="info" title="Why disulphides are a pharmacy concern">
+Insulin has two disulphide bonds. Reducing agents (DTT, β-mercaptoethanol, even high concentrations of vitamin C) reduce them, unfolding insulin and destroying activity. This is why insulin formulations are protected from light and oxidisers and stored cold.
+</Callout>
+
+## Quaternary structure — multimers
+
+Quaternary structure is the assembly of **two or more polypeptide chains** into a functional protein. The same forces that stabilise tertiary structure (hydrophobic, ionic, H-bonds, disulphides) stabilise the subunit interfaces.
+
+### Examples relevant to pharmacy
+
+- **Haemoglobin**: 2α + 2β subunits, each carrying a haem group. Allosteric — binding O₂ at one subunit shifts the others toward higher affinity (cooperativity, sigmoidal binding curve).
+- **Insulin**: stored as a Zn²⁺-stabilised hexamer; active form is the monomer. Long-acting insulins (glargine, detemir) deliberately tune the hexamer/monomer equilibrium to delay absorption from the injection site.
+- **IgG antibody**: 2 heavy + 2 light chains held by disulphides — the basis of every monoclonal antibody drug.
+- **DNA polymerase, RNA polymerase**: many-subunit machines.
+
+## Denaturation — losing structure
+
+Denaturation = loss of higher-order structure (secondary, tertiary, quaternary) **with primary structure intact**. Common denaturing conditions:
+
+| Agent | What it disrupts |
+| :--- | :--- |
+| Heat | All non-covalent interactions; eventually peptide bond too |
+| Strong acid / alkali | Ionic interactions, H-bonds; can hydrolyse peptide bond |
+| Urea, guanidine HCl | H-bonds (by competing); 8 M urea fully unfolds most proteins |
+| Detergents (SDS) | Hydrophobic core (replaces with detergent micelle) |
+| Reducing agents (DTT, β-ME) | Disulphide bonds specifically |
+| Heavy metals (Hg²⁺, Pb²⁺) | Bind to -SH groups, disrupt disulphides |
+| Mechanical shear | Hydrogen bonds, ionic |
+
+Renaturation is sometimes possible (Anfinsen's classic ribonuclease experiment) but usually irreversible at scale — folding requires chaperones in the cell. This is why food cooking, autoclaving, and many sterilisation methods rely on denaturation.
+
+<InlineCheckpoint
+  question="A protein is treated with 8 M urea and β-mercaptoethanol. Which level of structure is preserved?"
+  options={[
+    { text: "Primary only", correct: true },
+    { text: "Primary and secondary" },
+    { text: "All four levels" },
+    { text: "None — peptide bonds hydrolyse" },
+  ]}
+  explanation="Urea breaks H-bonds (disrupting α-helix, β-sheet, and tertiary contacts). β-mercaptoethanol reduces disulphides. Both leave peptide (covalent amide) bonds intact, so primary structure survives."
+/>
+
+## Wrap-up
+
+You can now place any structural feature at its correct level, predict what each denaturant attacks, and reason about why protein drugs need specialised formulation. Next unit: the catalysts of life — enzymes and their kinetics.

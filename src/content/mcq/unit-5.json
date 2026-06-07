@@ -1,0 +1,134 @@
+[
+  {
+    "id": "u5-q01",
+    "unitId": "unit-5",
+    "subTopicId": "glycolysis",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The rate-limiting enzyme of glycolysis is:",
+    "options": ["Hexokinase", "Phosphofructokinase-1", "Pyruvate kinase", "Glyceraldehyde-3-phosphate dehydrogenase"],
+    "correctIndex": 1,
+    "explanation": "PFK-1 is the committed and rate-limiting step. It's allosterically activated by AMP and F2,6BP (signals of low energy and high glucose), and inhibited by ATP and citrate (signals of energy plenty)."
+  },
+  {
+    "id": "u5-q02",
+    "unitId": "unit-5",
+    "subTopicId": "glycolysis",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The net ATP yield of glycolysis per glucose is:",
+    "options": ["1 ATP", "2 ATP", "4 ATP", "6 ATP"],
+    "correctIndex": 1,
+    "explanation": "Investment phase uses 2 ATP (steps 1 and 3). Payoff phase produces 4 ATP (steps 7 and 10, each happening twice due to the two trioses). Net = 4 - 2 = 2 ATP per glucose."
+  },
+  {
+    "id": "u5-q03",
+    "unitId": "unit-5",
+    "subTopicId": "glycolysis",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Which step of glycolysis generates NADH?",
+    "options": ["Hexokinase (step 1)", "PFK-1 (step 3)", "GAPDH (step 6)", "Pyruvate kinase (step 10)"],
+    "correctIndex": 2,
+    "explanation": "Step 6 (glyceraldehyde-3-phosphate dehydrogenase) reduces NAD⁺ to NADH while oxidising G3P to 1,3-BPG. This is the only redox step of glycolysis. 2 NADH per glucose."
+  },
+  {
+    "id": "u5-q04",
+    "unitId": "unit-5",
+    "subTopicId": "glycolysis",
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "question": "Arsenate uncouples step 7 of glycolysis. The consequence is:",
+    "options": ["Glycolysis stops completely", "Glycolysis proceeds without producing ATP at that step", "Glycolysis produces twice the normal ATP", "NADH accumulates uncontrollably"],
+    "correctIndex": 1,
+    "explanation": "Arsenate substitutes for inorganic phosphate at step 6/7, forming 1-arseno-3-phosphoglycerate which spontaneously hydrolyses without ATP synthesis. The pathway runs but skips the SLP step — net ATP from glycolysis drops to zero."
+  },
+  {
+    "id": "u5-q05",
+    "unitId": "unit-5",
+    "subTopicId": "glycolysis",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "Fluoride is added to blood-glucose collection tubes because it:",
+    "options": ["Stabilises haemoglobin", "Inhibits enolase, stopping glycolysis ex vivo", "Inhibits hexokinase, preventing glucose uptake", "Acts as an anticoagulant"],
+    "correctIndex": 1,
+    "explanation": "Sodium fluoride inhibits enolase (step 9 of glycolysis). Without it, blood cells continue to glycolyse the sample ex vivo, falsely lowering measured glucose by ~10 mg/dL per hour. Fluoride preserves the reading."
+  },
+  {
+    "id": "u5-q06",
+    "unitId": "unit-5",
+    "subTopicId": "glycolysis",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Under anaerobic conditions, pyruvate is converted to lactate by lactate dehydrogenase. This reaction regenerates:",
+    "options": ["ATP", "NAD⁺", "FAD", "Acetyl-CoA"],
+    "correctIndex": 1,
+    "explanation": "LDH uses NADH to reduce pyruvate to lactate, regenerating NAD⁺. NAD⁺ is required for step 6 of glycolysis to continue. This is why anaerobic glycolysis can run continuously — it doesn't need O₂ to recycle NAD⁺."
+  },
+  {
+    "id": "u5-q07",
+    "unitId": "unit-5",
+    "subTopicId": "glycolysis",
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "question": "The Cori cycle describes the metabolic loop in which:",
+    "options": ["Liver makes ketones, muscle uses them", "Muscle exports lactate to liver, which makes glucose and returns it", "Adipose breaks down fat, liver uses it for ketogenesis", "Brain stores glycogen and shares with muscle"],
+    "correctIndex": 1,
+    "explanation": "Cori cycle: skeletal muscle does anaerobic glycolysis → lactate → bloodstream → liver. Liver uses gluconeogenesis (ATP-expensive) to remake glucose, which returns to muscle. Net effect: muscle's ATP cost is offset by liver's expense."
+  },
+  {
+    "id": "u5-q08",
+    "unitId": "unit-5",
+    "subTopicId": "tca-cycle",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The TCA cycle takes place in:",
+    "options": ["Cytoplasm", "Mitochondrial matrix", "Inner mitochondrial membrane", "Nucleus"],
+    "correctIndex": 1,
+    "explanation": "All TCA enzymes are in the mitochondrial matrix EXCEPT succinate dehydrogenase, which is embedded in the inner membrane (and doubles as ETC Complex II). Glycolysis is cytoplasmic; pyruvate is imported into the matrix."
+  },
+  {
+    "id": "u5-q09",
+    "unitId": "unit-5",
+    "subTopicId": "tca-cycle",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "The rate-limiting enzyme of the TCA cycle is:",
+    "options": ["Citrate synthase", "Aconitase", "Isocitrate dehydrogenase", "α-ketoglutarate dehydrogenase"],
+    "correctIndex": 2,
+    "explanation": "Isocitrate dehydrogenase (step 3) is rate-limiting. Allosterically activated by ADP and Ca²⁺ (signals of high energy demand); inhibited by ATP and NADH (signals that the cell already has enough)."
+  },
+  {
+    "id": "u5-q10",
+    "unitId": "unit-5",
+    "subTopicId": "tca-cycle",
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "question": "Patients with thiamine (B1) deficiency (e.g., chronic alcoholism, beriberi) have impaired:",
+    "options": ["Glycolysis specifically", "Pyruvate dehydrogenase and α-KG dehydrogenase activity", "Fatty acid synthesis", "Urea cycle"],
+    "correctIndex": 1,
+    "explanation": "Thiamine pyrophosphate (TPP) is the cofactor for PDH, α-KG dehydrogenase, and branched-chain α-keto acid dehydrogenase. Without TPP, pyruvate and α-KG accumulate, lactate rises, and TCA cycle stalls — neurological features of Wernicke encephalopathy."
+  },
+  {
+    "id": "u5-q11",
+    "unitId": "unit-5",
+    "subTopicId": "tca-cycle",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Per turn of the TCA cycle, the products include:",
+    "options": ["1 NADH, 1 FADH₂, 1 ATP, 1 CO₂", "3 NADH, 1 FADH₂, 1 GTP, 2 CO₂", "2 NADH, 2 FADH₂, 1 GTP, 2 CO₂", "3 NADH, 1 FADH₂, 1 GTP, 3 CO₂"],
+    "correctIndex": 1,
+    "explanation": "One acetyl-CoA → 3 NADH + 1 FADH₂ + 1 GTP + 2 CO₂. Per glucose (2 acetyl-CoA), double these: 6 NADH, 2 FADH₂, 2 GTP, 4 CO₂."
+  },
+  {
+    "id": "u5-q12",
+    "unitId": "unit-5",
+    "subTopicId": "tca-cycle",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Phenylketonuria (PKU) results from deficiency of:",
+    "options": ["Phenylalanine hydroxylase", "Tyrosinase", "Homogentisate oxidase", "Branched-chain α-keto acid dehydrogenase"],
+    "correctIndex": 0,
+    "explanation": "PKU is autosomal recessive deficiency of phenylalanine hydroxylase (Phe → Tyr). Phe accumulates, transaminates to phenylpyruvate ('phenylketone'), causes intellectual disability. Treatment: lifelong low-Phe diet. Screened by Guthrie heel-prick at 48-72 hr of life."
+  }
+]

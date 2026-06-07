@@ -1,0 +1,12 @@
+{
+  "intents": [
+    { "id": "definition", "patterns": ["what is", "define", "definition of", "meaning of"] },
+    { "id": "explain", "patterns": ["explain", "how does", "how do", "tell me about", "describe"] },
+    { "id": "comparison", "patterns": ["difference between", "compare", "vs", "versus", "compared to"] },
+    { "id": "list_steps", "patterns": ["list", "steps of", "order of", "sequence of", "enzymes of"] },
+    { "id": "clinical_correlation", "patterns": ["clinical", "disease", "disorder", "pharmacology of", "drug for"] },
+    { "id": "calculation_help", "patterns": ["calculate", "compute", "how much", "atp from", "yield"] },
+    { "id": "greeting", "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "good evening"] },
+    { "id": "thanks", "patterns": ["thanks", "thank you", "thx"] }
+  ]
+}

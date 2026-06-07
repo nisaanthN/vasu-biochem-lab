@@ -1,0 +1,401 @@
+[
+  {
+    "id": "qa-001",
+    "intent": "explain",
+    "patterns": ["explain michaelis menten", "what is michaelis menten", "mm kinetics", "explain mm equation", "michaelis menten equation"],
+    "question": "Explain Michaelis-Menten kinetics",
+    "answer": "Michaelis-Menten kinetics describe how reaction rate (v) depends on substrate concentration ([S]) for most enzymes. The equation is **v = Vmax · [S] / (Km + [S])**, where Vmax is the maximum rate at saturating substrate, and Km is the substrate concentration at half-max rate. Low Km = high substrate affinity. The curve is a rectangular hyperbola; the Lineweaver-Burk plot (1/v vs 1/[S]) linearises it so you can read Km and Vmax from the intercepts.",
+    "unitId": "unit-3",
+    "topicId": "michaelis-menten",
+    "citationTopicIds": ["michaelis-menten"],
+    "followUps": ["What is Km?", "Show me the Lineweaver-Burk plot", "How do inhibitors affect this?"]
+  },
+  {
+    "id": "qa-002",
+    "intent": "definition",
+    "patterns": ["what is km", "define km", "km definition", "michaelis constant"],
+    "question": "What is Km?",
+    "answer": "Km (the Michaelis constant) is the substrate concentration at which the reaction rate is half of Vmax. It's a **measure of affinity** — low Km means the enzyme reaches half-max at low [S], meaning it binds substrate tightly. Km is intrinsic to the enzyme-substrate pair and doesn't depend on enzyme concentration. Classic example: hexokinase has Km ~0.1 mM (high affinity, always active), while glucokinase has Km ~10 mM (low affinity, only active post-prandially in liver).",
+    "unitId": "unit-3",
+    "topicId": "michaelis-menten",
+    "citationTopicIds": ["michaelis-menten"]
+  },
+  {
+    "id": "qa-003",
+    "intent": "comparison",
+    "patterns": ["difference between competitive and non-competitive", "competitive vs non competitive", "compare inhibition modes", "types of enzyme inhibition"],
+    "question": "What's the difference between competitive, non-competitive, and uncompetitive inhibition?",
+    "answer": "**Competitive**: inhibitor binds the active site, competes with substrate. Vmax unchanged, apparent Km increased. Example: methotrexate vs folate at DHFR.\n\n**Non-competitive**: inhibitor binds an allosteric site, available with or without substrate. Vmax decreased, Km unchanged. Example: heavy metals binding distal Cys residues.\n\n**Uncompetitive**: inhibitor binds only the ES complex. Both Km and Vmax decrease by the same factor. Example: lithium on inositol monophosphatase.\n\nOn Lineweaver-Burk: competitive — same y-intercept; non-competitive — same x-intercept; uncompetitive — parallel lines.",
+    "unitId": "unit-3",
+    "topicId": "michaelis-menten",
+    "citationTopicIds": ["michaelis-menten"]
+  },
+  {
+    "id": "qa-004",
+    "intent": "explain",
+    "patterns": ["explain glycolysis", "what is glycolysis", "glycolysis pathway", "embden meyerhof"],
+    "question": "What is glycolysis?",
+    "answer": "Glycolysis is the **10-step cytoplasmic pathway** that converts one glucose (6C) into two pyruvate (3C), netting 2 ATP and 2 NADH. The first 5 steps invest 2 ATP to prepare the sugar; the last 5 steps (running in duplicate for the two trioses) produce 4 ATP and 2 NADH. It runs aerobically (pyruvate → mitochondria) or anaerobically (pyruvate → lactate via LDH). Three irreversible regulatory steps: hexokinase (1), PFK-1 (3, rate-limiting), pyruvate kinase (10).",
+    "unitId": "unit-5",
+    "topicId": "glycolysis",
+    "citationTopicIds": ["glycolysis"],
+    "followUps": ["What's the rate-limiting step?", "What happens to pyruvate?", "Show me the walkthrough"]
+  },
+  {
+    "id": "qa-005",
+    "intent": "definition",
+    "patterns": ["what is a zwitterion", "define zwitterion", "zwitterion meaning"],
+    "question": "What is a zwitterion?",
+    "answer": "A zwitterion is a molecule that carries **both a positive and a negative charge** but is electrically neutral overall. Amino acids at physiological pH are classic zwitterions: their α-amino group is protonated (-NH₃⁺) and their α-carboxyl is deprotonated (-COO⁻). At the **isoelectric point (pI)**, the molecule is purely in zwitterion form and has zero net charge — which is why proteins are least soluble at their pI (no electrostatic repulsion between molecules).",
+    "unitId": "unit-2",
+    "topicId": "amino-acid-classification",
+    "citationTopicIds": ["amino-acid-classification"]
+  },
+  {
+    "id": "qa-006",
+    "intent": "explain",
+    "patterns": ["central dogma", "explain dna to protein", "transcription translation flow", "information flow biology"],
+    "question": "Walk me through the central dogma",
+    "answer": "The central dogma is **DNA → RNA → Protein**, plus DNA self-replication. **Replication**: DNA polymerase copies DNA (semi-conservatively). **Transcription**: RNA polymerase reads the DNA template (3'→5') and synthesises mRNA (5'→3'); in eukaryotes the mRNA is spliced, capped (5'), and polyadenylated (3'). **Translation**: ribosomes read mRNA codons; tRNAs (charged by aminoacyl-tRNA synthetases) bring the matching amino acid; the ribosome catalyses peptide bond formation; termination at a stop codon. Exceptions: reverse transcriptase (RNA → DNA, in retroviruses like HIV) and RNA replication (in some viruses).",
+    "unitId": "unit-4",
+    "topicId": "dna-rna-structure",
+    "citationTopicIds": ["dna-rna-structure"]
+  },
+  {
+    "id": "qa-007",
+    "intent": "definition",
+    "patterns": ["what is denaturation", "define denaturation", "protein denaturation"],
+    "question": "What is protein denaturation?",
+    "answer": "Denaturation is the **loss of higher-order structure (secondary, tertiary, quaternary)** in a protein while the primary structure (sequence + peptide bonds) remains intact. Triggers: heat, extreme pH, urea/guanidine HCl (disrupts H-bonds), detergents (disrupts hydrophobic core), reducing agents like β-mercaptoethanol or DTT (breaks disulphides), heavy metals (bind -SH). The protein loses function. Some proteins (e.g., RNase A in Anfinsen's experiment) can refold; many cannot without chaperones.",
+    "unitId": "unit-2",
+    "topicId": "protein-structure",
+    "citationTopicIds": ["protein-structure"]
+  },
+  {
+    "id": "qa-008",
+    "intent": "explain",
+    "patterns": ["explain etc", "electron transport chain", "what is oxidative phosphorylation", "etc complex i ii iii iv"],
+    "question": "How does the electron transport chain work?",
+    "answer": "The ETC is **four protein complexes (I–IV)** in the inner mitochondrial membrane that transfer electrons from NADH/FADH₂ to O₂, with the energy released used to **pump H⁺** from matrix to intermembrane space. Complex I: NADH → ubiquinone (4 H⁺ pumped). Complex II (succinate DH): FADH₂ → ubiquinone (0 H⁺). Complex III: ubiquinol → cytochrome c (2 H⁺). Complex IV: cyt c → O₂ → H₂O (4 H⁺). The H⁺ gradient (proton motive force) flows back through **ATP synthase (Complex V)**, mechanically driving ATP synthesis from ADP + Pi. This is Mitchell's chemiosmotic hypothesis.",
+    "unitId": "unit-4",
+    "topicId": "etc-oxphos",
+    "citationTopicIds": ["etc-oxphos"]
+  },
+  {
+    "id": "qa-009",
+    "intent": "definition",
+    "patterns": ["what is reducing sugar", "reducing sugar definition", "non reducing sugar"],
+    "question": "What is a reducing sugar?",
+    "answer": "A reducing sugar has a **free anomeric carbon** (free aldehyde or ketone, or a hemiacetal that can open) capable of reducing Cu²⁺ to Cu⁺ in Fehling's or Benedict's tests, giving a brick-red Cu₂O precipitate. Glucose, fructose, galactose, maltose, and lactose are reducing. **Sucrose is non-reducing** because its α(1→2)β linkage joins both anomeric carbons — neither can open. Polysaccharides like starch and cellulose are also non-reducing (the anomeric C of each unit is tied up in glycosidic bonds, except for the terminal ones — but those are too dilute to give a positive test).",
+    "unitId": "unit-1",
+    "topicId": "carbohydrate-classification",
+    "citationTopicIds": ["carbohydrate-classification"]
+  },
+  {
+    "id": "qa-010",
+    "intent": "comparison",
+    "patterns": ["hexokinase vs glucokinase", "glucokinase and hexokinase difference", "compare hexokinase glucokinase"],
+    "question": "What's the difference between hexokinase and glucokinase?",
+    "answer": "Both phosphorylate glucose to G6P, but they have different kinetic properties: **Hexokinase** (most tissues): low Km (~0.1 mM), product-inhibited by G6P, always active. Suited for tissues that always need glucose. **Glucokinase / hexokinase IV** (liver, pancreatic β-cells): high Km (~10 mM), NOT product-inhibited. Only kicks in when blood glucose is high (post-prandial). This lets liver store glucose as glycogen ONLY when there's excess, while other tissues always take their share first. Glucokinase is also the glucose sensor of β-cells, controlling insulin release.",
+    "unitId": "unit-3",
+    "topicId": "michaelis-menten",
+    "citationTopicIds": ["michaelis-menten", "glycolysis"]
+  },
+  {
+    "id": "qa-011",
+    "intent": "definition",
+    "patterns": ["what is allosteric", "allosteric enzyme definition", "allosteric regulation"],
+    "question": "What is allosteric regulation?",
+    "answer": "Allosteric regulation is the **binding of a regulator molecule at a site distinct from the active site**, altering enzyme activity. Allosteric enzymes are usually multi-subunit and show **sigmoidal (cooperative) kinetics** rather than Michaelis-Menten hyperbolic. Activators increase activity; inhibitors decrease it. Classic example: phosphofructokinase-1 is activated by AMP and F2,6BP, inhibited by ATP and citrate. Allosteric regulation is faster than transcriptional control and is reversible — ideal for moment-to-moment metabolic regulation.",
+    "unitId": "unit-3",
+    "topicId": "enzyme-classification",
+    "citationTopicIds": ["enzyme-classification", "michaelis-menten"]
+  },
+  {
+    "id": "qa-012",
+    "intent": "definition",
+    "patterns": ["what is isoelectric point", "pi definition", "define pi", "isoelectric point"],
+    "question": "What is the isoelectric point (pI)?",
+    "answer": "The isoelectric point is the **pH at which an amino acid or protein has zero net charge**. For a simple amino acid (no ionisable side chain): pI = (pKa1 + pKa2) / 2. For an acidic amino acid (Asp, Glu): pI = average of the two lowest pKa values. For a basic amino acid (Lys, Arg, His): pI = average of the two highest pKa values. At its pI, a molecule doesn't migrate in an electric field — the basis of isoelectric focusing. Proteins are least soluble at their pI (no electrostatic repulsion) — used in industrial purification (e.g., insulin precipitation at pI ~5.4).",
+    "unitId": "unit-2",
+    "topicId": "amino-acid-classification",
+    "citationTopicIds": ["amino-acid-classification"]
+  },
+  {
+    "id": "qa-013",
+    "intent": "list_steps",
+    "patterns": ["steps of glycolysis", "list glycolysis enzymes", "ten enzymes of glycolysis"],
+    "question": "What are the 10 steps of glycolysis?",
+    "answer": "1. Hexokinase: glucose → G6P (uses ATP, irreversible)\n2. Phosphohexose isomerase: G6P ⇌ F6P\n3. PFK-1: F6P → F1,6BP (uses ATP, irreversible, rate-limiting)\n4. Aldolase: F1,6BP → DHAP + G3P\n5. Triose-P isomerase: DHAP ⇌ G3P\n6. GAPDH: G3P → 1,3-BPG (makes NADH)\n7. Phosphoglycerate kinase: 1,3-BPG → 3-PG (makes ATP, SLP)\n8. Phosphoglycerate mutase: 3-PG ⇌ 2-PG\n9. Enolase: 2-PG → PEP + H₂O\n10. Pyruvate kinase: PEP → pyruvate (makes ATP, SLP, irreversible)\n\nNet: −2 + 4 = **+2 ATP** and **+2 NADH** per glucose.",
+    "unitId": "unit-5",
+    "topicId": "glycolysis",
+    "citationTopicIds": ["glycolysis"]
+  },
+  {
+    "id": "qa-014",
+    "intent": "list_steps",
+    "patterns": ["steps of tca cycle", "tca cycle enzymes", "krebs cycle steps", "citric acid cycle enzymes"],
+    "question": "What are the 8 steps of the TCA cycle?",
+    "answer": "1. Citrate synthase: acetyl-CoA + OAA → citrate\n2. Aconitase: citrate ⇌ isocitrate\n3. Isocitrate DH: isocitrate → α-KG + CO₂ + NADH (rate-limiting)\n4. α-KG DH: α-KG → succinyl-CoA + CO₂ + NADH\n5. Succinyl-CoA synthetase: succinyl-CoA → succinate + GTP\n6. Succinate DH: succinate → fumarate + FADH₂ (= Complex II of ETC)\n7. Fumarase: fumarate + H₂O → malate\n8. Malate DH: malate → OAA + NADH\n\nPer turn: **3 NADH, 1 FADH₂, 1 GTP, 2 CO₂** = ~10 ATP equivalents per acetyl-CoA.",
+    "unitId": "unit-5",
+    "topicId": "tca-cycle",
+    "citationTopicIds": ["tca-cycle"]
+  },
+  {
+    "id": "qa-015",
+    "intent": "clinical_correlation",
+    "patterns": ["diabetes biochemistry", "how diabetes works", "diabetes mechanism", "diabetes mellitus pathophysiology"],
+    "question": "What's the biochemistry of diabetes mellitus?",
+    "answer": "**Type 1**: autoimmune destruction of pancreatic β-cells → no insulin. **Type 2**: peripheral insulin resistance + relative insulin deficiency. The biochemical consequences: without insulin signalling, GLUT4 doesn't translocate to muscle/adipose membranes → glucose can't enter → hyperglycemia. Liver runs gluconeogenesis unrestrained → worsens hyperglycemia. Adipose lipolysis is uncontrolled → free fatty acids → liver makes ketone bodies (acetoacetate, β-hydroxybutyrate, acetone) → DKA in T1. Chronic hyperglycemia glycates proteins non-enzymatically — HbA1c is the diagnostic marker; AGEs (advanced glycation end-products) drive microvascular complications.",
+    "unitId": "unit-5",
+    "topicId": "tca-cycle",
+    "citationTopicIds": ["tca-cycle", "glycolysis"]
+  },
+  {
+    "id": "qa-016",
+    "intent": "clinical_correlation",
+    "patterns": ["pku phenylketonuria", "what is pku", "phenylketonuria explained"],
+    "question": "What is phenylketonuria (PKU)?",
+    "answer": "PKU is an **autosomal recessive deficiency of phenylalanine hydroxylase** — the enzyme that converts phenylalanine to tyrosine. Phe accumulates and is transaminated to phenylpyruvate (the eponymous 'phenylketone'). Untreated, it causes severe intellectual disability, seizures, eczema, and light pigmentation (tyrosine is the melanin precursor). **Treatment** is a lifelong low-phenylalanine diet plus tyrosine supplementation. Screened at birth by the **Guthrie heel-prick test** at 48-72 hours of life. Aspartame hydrolysis releases phenylalanine — hence the warning labels on diet sodas.",
+    "unitId": "unit-5",
+    "topicId": "tca-cycle",
+    "citationTopicIds": ["tca-cycle"]
+  },
+  {
+    "id": "qa-017",
+    "intent": "clinical_correlation",
+    "patterns": ["gout biochemistry", "gout uric acid", "what causes gout", "uric acid pathway"],
+    "question": "What's the biochemistry of gout?",
+    "answer": "Gout is caused by **hyperuricemia** → monosodium urate crystal deposition in joints (acutely painful arthritis) and soft tissues (tophi). Uric acid is the final breakdown product of purine catabolism (A and G → hypoxanthine → xanthine → uric acid by **xanthine oxidase**). Hyperuricemia from overproduction (purine-rich diet, tumor lysis) or underexcretion (renal). Drug classes: **allopurinol/febuxostat** inhibit xanthine oxidase (decrease production); **probenecid** is uricosuric (increase excretion); **NSAIDs/colchicine** treat acute attacks; **pegloticase** is recombinant uricase for refractory cases. Lesch-Nyhan syndrome is HGPRT deficiency causing severe juvenile gout.",
+    "unitId": "unit-5",
+    "topicId": "tca-cycle",
+    "citationTopicIds": ["tca-cycle"]
+  },
+  {
+    "id": "qa-018",
+    "intent": "definition",
+    "patterns": ["what is atp", "atp structure", "adenosine triphosphate"],
+    "question": "What is ATP?",
+    "answer": "ATP (adenosine triphosphate) is the **universal energy currency** of the cell. Structure: adenine + ribose + three phosphate groups (α, β, γ). Hydrolysis of the γ-phosphate releases ~−30.5 kJ/mol (ΔG°' ≈ −7.3 kcal/mol), which is why it's called 'high energy'. The energy comes from (a) electrostatic repulsion between the three negative phosphates, (b) resonance stabilisation of the released phosphate, and (c) solvation of products. ATP is generated by substrate-level phosphorylation (glycolysis, TCA) and oxidative phosphorylation (the ETC + ATP synthase). The body recycles its body weight in ATP daily — total cellular ATP turns over every ~1 minute.",
+    "unitId": "unit-4",
+    "topicId": "etc-oxphos",
+    "citationTopicIds": ["etc-oxphos"]
+  },
+  {
+    "id": "qa-019",
+    "intent": "definition",
+    "patterns": ["coenzyme vs cofactor", "what is a coenzyme", "what is a cofactor"],
+    "question": "What's the difference between a coenzyme and a cofactor?",
+    "answer": "**Cofactor** is the umbrella term — any non-protein chemical needed for enzyme activity. It splits into: **Metal ions** (Mg²⁺ for kinases, Zn²⁺ for carbonic anhydrase, Fe in cytochromes) and **Coenzymes** (organic molecules, often vitamin-derived). Coenzymes include NAD⁺/NADP⁺ (from niacin), FAD/FMN (from riboflavin), CoA (from pantothenic acid), TPP (from thiamine), PLP (from B6), THF (from folate), biotin (B7), B12. The enzyme alone is **apoenzyme**; with its cofactor it's **holoenzyme** (catalytically active).",
+    "unitId": "unit-3",
+    "topicId": "enzyme-classification",
+    "citationTopicIds": ["enzyme-classification"]
+  },
+  {
+    "id": "qa-020",
+    "intent": "explain",
+    "patterns": ["how do statins work", "statin mechanism", "hmg coa reductase"],
+    "question": "How do statins work?",
+    "answer": "Statins are **competitive inhibitors of HMG-CoA reductase** — the rate-limiting enzyme of cholesterol biosynthesis (HMG-CoA → mevalonate). When hepatic cholesterol synthesis is suppressed, the liver compensates by **upregulating LDL receptors**, which pull more LDL out of the bloodstream — lowering serum LDL. Statins also have pleiotropic effects (mild anti-inflammatory, endothelial). Side effects include myalgia (statin-induced myopathy, possibly via CoQ10 depletion since CoQ10 shares the mevalonate pathway) and rare rhabdomyolysis. Atorvastatin, rosuvastatin, simvastatin are the workhorse statins.",
+    "unitId": "unit-1",
+    "topicId": "lipid-classification",
+    "citationTopicIds": ["lipid-classification"]
+  },
+  {
+    "id": "qa-021",
+    "intent": "definition",
+    "patterns": ["essential amino acids", "list essential amino acids", "which amino acids are essential"],
+    "question": "Which amino acids are essential?",
+    "answer": "The **9 nutritionally essential amino acids** in humans (must come from diet, cannot be synthesised): **Phenylalanine, Valine, Threonine, Tryptophan, Isoleucine, Methionine, Histidine, Leucine, Lysine** — remember as 'PVT TIM HALL'. **Arginine** is conditionally essential (essential during growth, illness, or trauma). Tyrosine and cysteine are 'semi-essential' — they're made from Phe and Met respectively, so they become essential if Phe or Met are deficient.",
+    "unitId": "unit-2",
+    "topicId": "amino-acid-classification",
+    "citationTopicIds": ["amino-acid-classification"]
+  },
+  {
+    "id": "qa-022",
+    "intent": "explain",
+    "patterns": ["iodine number", "what is iodine number", "iodine value"],
+    "question": "What is iodine number?",
+    "answer": "Iodine number is the **grams of iodine absorbed by 100 g of fat or oil**. Iodine adds across C=C double bonds, so a higher iodine number means more unsaturation. Values: butter ~25-40 (saturated), olive oil ~80-88 (monounsaturated), linseed oil ~170-200 (highly unsaturated). Used in the pharmacopoeia to confirm identity of fixed oils and detect adulteration. Pairs with **saponification number** (mg KOH to saponify 1 g — higher SN = shorter chains) as the two standard analytical descriptors for fats.",
+    "unitId": "unit-1",
+    "topicId": "lipid-classification",
+    "citationTopicIds": ["lipid-classification"]
+  },
+  {
+    "id": "qa-023",
+    "intent": "explain",
+    "patterns": ["saponification number", "what is saponification", "saponification value"],
+    "question": "What is saponification number?",
+    "answer": "Saponification number is the **mg of KOH needed to saponify (alkaline hydrolyse) 1 g of fat**. Saponification cleaves triglyceride ester bonds to release glycerol + fatty-acid potassium salts (soap). Higher SN means **shorter fatty-acid chains** (more ester groups per gram). Values: coconut oil ~250-264 (C8-C14 chains), olive oil ~187-196 (C18 chains), beeswax ~90-95 (very long chains).",
+    "unitId": "unit-1",
+    "topicId": "lipid-classification",
+    "citationTopicIds": ["lipid-classification"]
+  },
+  {
+    "id": "qa-024",
+    "intent": "comparison",
+    "patterns": ["dna vs rna", "difference between dna and rna", "compare dna rna"],
+    "question": "What's the difference between DNA and RNA?",
+    "answer": "**Sugar**: DNA has 2'-deoxyribose (H at C2'); RNA has ribose (OH at C2'). **Bases**: DNA has T (thymine); RNA has U (uracil). C, A, G are in both. **Strands**: DNA is typically double-stranded helix; RNA is typically single-stranded but folds via intramolecular base-pairing. **Stability**: DNA is more chemically stable (no 2'-OH to attack neighbouring phosphate); RNA is more reactive — easily hydrolysed by alkaline conditions or RNases. **Role**: DNA stores genetic information long-term; RNA carries and translates it (mRNA, tRNA, rRNA) and sometimes catalyses (ribozymes).",
+    "unitId": "unit-4",
+    "topicId": "dna-rna-structure",
+    "citationTopicIds": ["dna-rna-structure"]
+  },
+  {
+    "id": "qa-025",
+    "intent": "definition",
+    "patterns": ["substrate level phosphorylation", "what is slp", "slp"],
+    "question": "What is substrate-level phosphorylation?",
+    "answer": "**Substrate-level phosphorylation (SLP)** is ATP synthesis by **direct transfer of a phosphate** from a high-energy substrate to ADP — no electron transport chain, no proton gradient needed. Examples: glycolysis step 7 (1,3-BPG → 3-PG, by phosphoglycerate kinase) and step 10 (PEP → pyruvate, by pyruvate kinase) — each makes 1 ATP per triose. TCA cycle step 5 (succinyl-CoA → succinate, by succinyl-CoA synthetase) makes 1 GTP. SLP is anaerobic-friendly — it's why glycolysis can run in red blood cells (no mitochondria) and in fast-twitch muscle during burst exercise.",
+    "unitId": "unit-5",
+    "topicId": "glycolysis",
+    "citationTopicIds": ["glycolysis", "tca-cycle"]
+  },
+  {
+    "id": "qa-026",
+    "intent": "definition",
+    "patterns": ["what is cori cycle", "cori cycle explained"],
+    "question": "What is the Cori cycle?",
+    "answer": "The Cori cycle is the metabolic **loop between muscle and liver** during exercise. Exercising muscle does anaerobic glycolysis → produces lactate → exports lactate to bloodstream. Liver imports the lactate, runs it through gluconeogenesis (essentially reverse glycolysis with workarounds at the irreversible steps — costing 6 ATP per glucose), regenerates glucose, and releases it back to circulation. Muscle re-imports the glucose. Net: muscle gets ATP at the cost of lactate; liver pays the energy cost of resynthesis. Useful during exercise, but extreme states (e.g., shock, severe sepsis) lead to dangerous lactic acidosis.",
+    "unitId": "unit-5",
+    "topicId": "glycolysis",
+    "citationTopicIds": ["glycolysis"]
+  },
+  {
+    "id": "qa-027",
+    "intent": "explain",
+    "patterns": ["how does cyanide work", "cyanide poisoning mechanism", "cyanide etc"],
+    "question": "How does cyanide poisoning work?",
+    "answer": "Cyanide (CN⁻) binds the **iron of cytochrome c oxidase (Complex IV)** of the electron transport chain with very high affinity, halting electron transfer to O₂. Electrons back up in the chain; NADH can't be reoxidised; the TCA cycle stalls; cells switch to lactic fermentation to regenerate NAD⁺ → lactic acidosis. ATP collapses; high-demand tissues (brain, heart) fail rapidly. **Antidotes**: hydroxocobalamin (B12 precursor that sequesters CN as cyanocobalamin), or the Lily kit — sodium nitrite (creates methaemoglobin which competes with cyt c oxidase for CN) + sodium thiosulphate (helps the body convert CN to thiocyanate for renal excretion).",
+    "unitId": "unit-4",
+    "topicId": "etc-oxphos",
+    "citationTopicIds": ["etc-oxphos"]
+  },
+  {
+    "id": "qa-028",
+    "intent": "explain",
+    "patterns": ["how do antibiotics target ribosome", "ribosome antibiotics", "antibiotic protein synthesis inhibitors"],
+    "question": "Which antibiotics target bacterial ribosomes and how?",
+    "answer": "Many antibiotics exploit differences between bacterial (70S — 30S+50S) and eukaryotic (80S) ribosomes:\n• **Aminoglycosides** (gentamicin, streptomycin): bind 30S, cause misreading\n• **Tetracyclines** (doxycycline): bind 30S A-site, block tRNA binding (bacteriostatic)\n• **Macrolides** (azithromycin, erythromycin): bind 50S exit tunnel, block translocation\n• **Lincosamides** (clindamycin): bind 50S, block peptidyl transferase\n• **Chloramphenicol**: 50S peptidyl transferase center\n• **Linezolid** (oxazolidinone): blocks 50S formation/initiation\n\nSelectivity for bacteria is essential — but high-dose aminoglycosides do cause ototoxicity because mitochondrial ribosomes resemble bacterial ones.",
+    "unitId": "unit-4",
+    "topicId": "dna-rna-structure",
+    "citationTopicIds": ["dna-rna-structure"]
+  },
+  {
+    "id": "qa-029",
+    "intent": "definition",
+    "patterns": ["what is a holoenzyme", "holoenzyme definition", "holoenzyme vs apoenzyme"],
+    "question": "What's the difference between an apoenzyme and a holoenzyme?",
+    "answer": "**Apoenzyme** = the protein part of an enzyme without its cofactor — catalytically inactive. **Holoenzyme** = apoenzyme + cofactor (metal ion or coenzyme) — catalytically active. Example: pyruvate dehydrogenase is inactive without its full cocktail (TPP, lipoic acid, CoA, FAD, NAD⁺). The cofactor is often the chemical workhorse — it carries electrons, methyl groups, or other functional pieces between substrates that the protein alone couldn't.",
+    "unitId": "unit-3",
+    "topicId": "enzyme-classification",
+    "citationTopicIds": ["enzyme-classification"]
+  },
+  {
+    "id": "qa-030",
+    "intent": "explain",
+    "patterns": ["how do you calculate atp yield", "atp from glucose", "total atp per glucose"],
+    "question": "How much ATP do you get from one glucose?",
+    "answer": "Using modern P/O ratios (NADH = 2.5, FADH₂ = 1.5):\n• **Glycolysis**: 2 ATP (net) + 2 NADH (→ 5 ATP via shuttles) = 7\n• **PDH** (×2): 2 NADH = 5 ATP\n• **TCA** (×2 turns): 6 NADH + 2 FADH₂ + 2 GTP = 15 + 3 + 2 = 20\n\n**Total: ~32 ATP per glucose** (aerobic, malate-aspartate shuttle).\n\nUsing the older integer values (NADH = 3, FADH₂ = 2), you get 38 ATP. Indian textbooks often still teach 38 — both are acceptable depending on the exam.",
+    "unitId": "unit-4",
+    "topicId": "etc-oxphos",
+    "citationTopicIds": ["etc-oxphos", "glycolysis", "tca-cycle"]
+  },
+  {
+    "id": "qa-031",
+    "intent": "definition",
+    "patterns": ["what is suicide inhibition", "mechanism based inhibition", "suicide inhibitor"],
+    "question": "What is suicide inhibition?",
+    "answer": "Suicide inhibition (mechanism-based inhibition) is when an **inhibitor is processed by the enzyme as if it were a substrate**, generating a reactive intermediate that **covalently and irreversibly binds the active site**, inactivating the enzyme. Classic example: **allopurinol** is oxidised by xanthine oxidase to **oxypurinol**, which then binds the active-site Mo with high affinity. Other examples: aspirin (irreversibly acetylates COX), penicillin (acylates bacterial transpeptidase), 5-fluorouracil (inactivates thymidylate synthase). The selectivity is excellent because it requires the target enzyme to activate the drug.",
+    "unitId": "unit-3",
+    "topicId": "michaelis-menten",
+    "citationTopicIds": ["michaelis-menten"]
+  },
+  {
+    "id": "qa-032",
+    "intent": "explain",
+    "patterns": ["color reactions of proteins", "protein qualitative tests", "biuret millon ninhydrin"],
+    "question": "What are the main protein color reactions?",
+    "answer": "**Ninhydrin** — purple (Ruhemann's purple) with any free α-amino group (proline gives yellow).\n**Biuret** — violet with peptide bonds (≥ 2 needed). Cu²⁺ in alkali.\n**Xanthoproteic** — yellow → orange with aromatic AAs (Phe, Tyr, Trp). conc. HNO₃.\n**Millon's** — red, specific for tyrosine. Hg(NO₃)₂ in HNO₃.\n**Pauly** — red, for tyrosine and histidine. Diazotised sulphanilic acid.\n**Sakaguchi** — red, specific for arginine. α-Naphthol + NaOCl.\n**Hopkins-Cole** — purple ring with tryptophan. Glyoxylic acid + conc. H₂SO₄.\n**Lead acetate** — black ppt with sulphur-containing AAs (Cys, Met).",
+    "unitId": "unit-2",
+    "topicId": "amino-acid-classification",
+    "citationTopicIds": ["amino-acid-classification"]
+  },
+  {
+    "id": "qa-033",
+    "intent": "definition",
+    "patterns": ["wobble hypothesis", "what is wobble", "third base wobble"],
+    "question": "What is the wobble hypothesis?",
+    "answer": "The wobble hypothesis (Crick, 1966) explains how a smaller set of tRNAs can read all 64 codons: the **third (3') base of the codon** can pair with non-standard bases in the 5' (wobble) position of the anticodon. The first two codon positions still pair strictly Watson-Crick, but the third allows some 'wobble' (e.g., G can pair with U; inosine in tRNA can pair with U, C, or A). This explains code degeneracy — most amino acids with multiple codons differ only in the third position.",
+    "unitId": "unit-4",
+    "topicId": "dna-rna-structure",
+    "citationTopicIds": ["dna-rna-structure"]
+  },
+  {
+    "id": "qa-034",
+    "intent": "clinical_correlation",
+    "patterns": ["g6pd deficiency", "favism", "primaquine sensitivity"],
+    "question": "What is G6PD deficiency?",
+    "answer": "Glucose-6-phosphate dehydrogenase deficiency is the **most common enzymopathy worldwide** — X-linked. G6PD is the first and rate-limiting enzyme of the **pentose phosphate pathway**, producing NADPH (which keeps glutathione reduced, protecting RBCs from oxidative stress). When G6PD is deficient, RBCs can't handle oxidative stress and undergo haemolysis. Triggers: **fava beans** (favism), **drugs** (primaquine, sulfonamides, nitrofurantoin, dapsone), **infections**, and **moth-ball naphthalene**. Diagnosis: low G6PD activity, Heinz bodies on smear (denatured Hb). Management: avoid triggers; transfuse if severe.",
+    "unitId": "unit-5",
+    "topicId": "glycolysis",
+    "citationTopicIds": ["glycolysis"]
+  },
+  {
+    "id": "qa-035",
+    "intent": "explain",
+    "patterns": ["how does insulin work", "insulin signalling", "insulin mechanism"],
+    "question": "How does insulin work?",
+    "answer": "Insulin is secreted from pancreatic β-cells when blood glucose rises. It binds the **insulin receptor** (a tyrosine kinase) on muscle, adipose, and liver cells. Receptor autophosphorylates, recruits IRS-1, activates the PI3K → Akt pathway. The downstream effects: **GLUT4 vesicles translocate to the membrane** in muscle and adipose → glucose uptake. **Glycogen synthesis activated** (in liver and muscle), **gluconeogenesis suppressed**, **lipogenesis activated**, **lipolysis suppressed**, **protein synthesis stimulated**. Type 1 diabetes: no insulin produced. Type 2: receptor or post-receptor signalling resistance. Drug classes target every step of this cascade.",
+    "unitId": "unit-2",
+    "topicId": "protein-structure",
+    "citationTopicIds": ["protein-structure", "tca-cycle"]
+  },
+  {
+    "id": "qa-036",
+    "intent": "definition",
+    "patterns": ["beta oxidation", "what is beta oxidation", "fatty acid oxidation"],
+    "question": "What is β-oxidation?",
+    "answer": "β-oxidation is the **mitochondrial pathway that breaks down fatty acids** for energy. A 2-carbon acetyl-CoA is cleaved from the carboxyl end of the fatty-acyl-CoA in each round (the β-carbon is oxidised — hence the name). Each round produces 1 FADH₂, 1 NADH, and 1 acetyl-CoA. Fatty acids enter mitochondria via the **carnitine shuttle** (carnitine palmitoyltransferase I and II, inhibited by malonyl-CoA — connecting synthesis and breakdown reciprocally). Energy yield: palmitate (C16) yields ~106 ATP total. Defects (e.g., MCAD deficiency) cause hypoketotic hypoglycemia in fasting.",
+    "unitId": "unit-1",
+    "topicId": "lipid-classification",
+    "citationTopicIds": ["lipid-classification"]
+  },
+  {
+    "id": "qa-037",
+    "intent": "definition",
+    "patterns": ["urea cycle", "what is urea cycle", "nitrogen disposal"],
+    "question": "What is the urea cycle?",
+    "answer": "The urea cycle (or ornithine cycle) is the **hepatic pathway that converts toxic ammonia (NH₄⁺) into urea** for renal excretion. It has 5 enzymes spread between mitochondria (carbamoyl phosphate synthetase I, ornithine transcarbamoylase) and cytoplasm (argininosuccinate synthetase, argininosuccinate lyase, arginase). Net: 2 NH₃ + CO₂ + 3 ATP → 1 urea (CO(NH₂)₂) + 2 ADP + AMP + 4 Pi. Defects (e.g., ornithine transcarbamoylase deficiency — most common, X-linked) cause hyperammonemia → cerebral edema, encephalopathy. Mnemonic: 'Ordinarily Careless Crappers Are Also Frivolous About Urination'.",
+    "unitId": "unit-5",
+    "topicId": "tca-cycle",
+    "citationTopicIds": ["tca-cycle"]
+  },
+  {
+    "id": "qa-038",
+    "intent": "comparison",
+    "patterns": ["glycogenesis vs glycogenolysis", "glycogen synthesis vs breakdown", "compare glycogenesis"],
+    "question": "What's the difference between glycogenesis and glycogenolysis?",
+    "answer": "**Glycogenesis** = building glycogen (anabolic). Activated by insulin. Key enzymes: glycogen synthase (adds α-1,4 linkages), branching enzyme (creates α-1,6 branches). Substrate: UDP-glucose. **Glycogenolysis** = breaking down glycogen (catabolic). Activated by glucagon (liver) and epinephrine (muscle). Key enzymes: glycogen phosphorylase (cleaves α-1,4, releasing glucose-1-phosphate), debranching enzyme (handles α-1,6). G1P → G6P → glucose (liver, via glucose-6-phosphatase) or glycolysis (muscle, no G6Pase). The reciprocal regulation by insulin/glucagon switches them on/off oppositely.",
+    "unitId": "unit-5",
+    "topicId": "glycolysis",
+    "citationTopicIds": ["glycolysis"]
+  },
+  {
+    "id": "qa-039",
+    "intent": "definition",
+    "patterns": ["what is gluconeogenesis", "gluconeogenesis pathway", "make glucose from non carbohydrate"],
+    "question": "What is gluconeogenesis?",
+    "answer": "Gluconeogenesis is the synthesis of **glucose from non-carbohydrate precursors** — mainly in liver (some in kidney). Substrates: lactate, glycerol, glucogenic amino acids (especially alanine). Essentially **reverse glycolysis with bypasses at the 3 irreversible steps**: pyruvate carboxylase + PEP carboxykinase (bypasses pyruvate kinase), fructose-1,6-bisphosphatase (bypasses PFK-1), and glucose-6-phosphatase (bypasses hexokinase). Costs **6 ATP equivalents per glucose**. Reciprocally regulated with glycolysis (glucagon and cortisol favour gluconeogenesis; insulin suppresses it). Metformin works partly by suppressing hepatic gluconeogenesis.",
+    "unitId": "unit-5",
+    "topicId": "glycolysis",
+    "citationTopicIds": ["glycolysis"]
+  },
+  {
+    "id": "qa-040",
+    "intent": "greeting",
+    "patterns": ["hi", "hello", "hey", "good morning", "good evening", "help"],
+    "question": "Hello!",
+    "answer": "Hi! I'm your **BioPharm Lab tutor** — I can explain concepts, define terms, and walk you through pathways and inhibition modes from the BP203T syllabus. Try one of the suggested prompts below, or just ask in your own words. I cover biomolecules, proteins, enzymes, nucleic acids, bioenergetics, and metabolism. **Note**: I'm rule-based — I draw from a curated knowledge graph of ~40 topics, not a large language model. That means I'm 100% accurate on what I know, but limited to syllabus content. If you ask about something off-syllabus, I'll suggest related topics."
+  }
+]

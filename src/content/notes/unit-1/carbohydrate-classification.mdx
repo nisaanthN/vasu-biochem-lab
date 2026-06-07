@@ -1,0 +1,119 @@
+---
+unit: unit-1
+topicId: carbohydrate-classification
+title: Carbohydrate classification and structure
+blurb: Mono-, di-, oligo-, and polysaccharides. Fischer and Haworth projections. Reducing and non-reducing sugars.
+estimatedMinutes: 12
+xp: 20
+learningObjectives:
+  - Classify any given carbohydrate by chain length and functional group
+  - Distinguish reducing from non-reducing sugars
+  - Convert between Fischer and Haworth projections for hexoses
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 7"
+  - "Satyanarayana Biochemistry, 5e, Ch. 1"
+---
+
+## Why carbohydrates matter to pharmacy
+
+Carbohydrates are the most abundant biomolecules on Earth and the body's principal short-term energy currency. For a pharmacy student, they show up everywhere — as **glucose** in IV fluids, as **lactose** in tablet excipients, as **cellulose derivatives** in controlled-release coatings, and as the **glycosidic linkages** that make many drugs (digoxin, daunorubicin) bioactive.
+
+A carbohydrate is, formally, a polyhydroxy aldehyde or ketone — or anything that hydrolyses to one. The empirical formula `(CH₂O)ₙ` led to the old name "hydrate of carbon", though that label is misleading once you look at the actual structures.
+
+## The classification tree
+
+<KeyPoint>
+**The single most testable fact**: carbohydrates are classified by **the number of sugar units they contain** — monosaccharide (1), disaccharide (2), oligosaccharide (3–10), polysaccharide (>10).
+</KeyPoint>
+
+### Monosaccharides
+
+The simplest sugars. They cannot be hydrolysed further. Sub-classify by:
+
+1. **Carbonyl group**: aldose (terminal CHO) vs ketose (internal C=O).
+2. **Chain length**: triose (3C), tetrose (4C), pentose (5C), hexose (6C), heptose (7C).
+
+So **glucose** is an aldohexose, **fructose** is a ketohexose, **ribose** is an aldopentose, **glyceraldehyde** is the simplest aldotriose.
+
+<Mnemonic phrase="GGG-MFG = Glucose, Galactose, Mannose are aldohexoses; Fructose is the ketohexose">
+A clean way to remember the four common hexoses you'll meet in metabolism. Glucose differs from galactose only at C4 (epimers), and from mannose only at C2.
+</Mnemonic>
+
+### Disaccharides
+
+Two monosaccharides joined by a **glycosidic bond** formed in a condensation reaction (water released). The four pharmacy-relevant ones:
+
+| Disaccharide | Monomers | Linkage | Reducing? |
+| :--- | :--- | :--- | :--- |
+| Maltose | Glucose + Glucose | α(1→4) | Yes |
+| Lactose | Galactose + Glucose | β(1→4) | Yes |
+| Sucrose | Glucose + Fructose | α(1→2)β | **No** |
+| Cellobiose | Glucose + Glucose | β(1→4) | Yes |
+
+Sucrose is special: its glycosidic bond joins the **anomeric carbons of both monomers**, locking them in the ring form and abolishing the free aldehyde/ketone. That's why sucrose is non-reducing.
+
+### Oligosaccharides
+
+3–10 sugar units. Less commonly tested standalone, but critical as the glycan portion of glycoproteins and glycolipids — the basis of blood-group antigens (A, B, O differ only in the terminal sugar) and many cell-surface receptors that drugs target.
+
+### Polysaccharides
+
+| Polysaccharide | Monomer | Linkage | Role |
+| :--- | :--- | :--- | :--- |
+| Starch (amylose) | α-glucose | α(1→4) | Plant storage |
+| Starch (amylopectin) | α-glucose | α(1→4), α(1→6) branches | Plant storage |
+| Glycogen | α-glucose | α(1→4), α(1→6) — denser branching | Animal storage (liver, muscle) |
+| Cellulose | β-glucose | β(1→4) | Plant structural |
+| Chitin | N-acetyl-glucosamine | β(1→4) | Fungal/arthropod structural |
+
+<Callout variant="info" title="Why we can't digest cellulose">
+Humans lack β-glucosidase. The **α** vs **β** linkage is everything: starch and glycogen are easily hydrolysed by salivary and pancreatic amylase, but cellulose passes through us as dietary fibre.
+</Callout>
+
+## Fischer and Haworth projections
+
+The straight-chain Fischer projection makes stereochemistry explicit at every chiral centre. For a D-sugar (the biologically common form), the **hydroxyl on the highest-numbered chiral carbon points right**. For L-sugars, it points left.
+
+```
+Fischer (D-glucose)        Haworth (β-D-glucopyranose)
+       CHO                       6 CH₂OH
+       |                            |
+   H — C — OH                     ┌— O —┐
+       |                          |     |
+  HO — C — H                  H — C     C — OH
+       |                          |     |
+   H — C — OH                  HO — C     C — H
+       |                          |     |
+   H — C — OH                  H — C — C — OH
+       |                                |
+       CH₂OH                            H
+```
+
+In solution, hexoses don't actually exist as straight chains. The aldehyde at C1 reacts intramolecularly with the hydroxyl at C5 to form a **six-membered pyranose ring**. The new stereocentre at C1 (the **anomeric carbon**) gives two anomers: α (OH down in Haworth) and β (OH up).
+
+The interconversion of α and β through the open-chain form is called **mutarotation** — and the open-chain form, with its free aldehyde, is what makes most monosaccharides **reducing sugars**.
+
+## Reducing vs non-reducing — the test
+
+A reducing sugar can donate electrons to a copper(II) ion in solution, reducing it to copper(I) and producing the classic brick-red Cu₂O precipitate. This is the chemistry behind **Fehling's, Benedict's, and Tollens' tests**.
+
+<Callout variant="success" title="Try the virtual lab">
+The qualitative carbohydrate tests experiment lets you pick any of six reagents and apply them to glucose, fructose, sucrose, lactose, or starch and watch the colour change. It's the cleanest way to internalise the distinguishing tests for the upcoming practical viva.
+</Callout>
+
+A reducing sugar must have a **free anomeric carbon** (free CHO in the open form, or a hemiacetal that can open). Sucrose locks both anomeric carbons in the glycosidic bond, so it cannot open — non-reducing.
+
+<InlineCheckpoint
+  question="Which of the following is a non-reducing sugar?"
+  options={[
+    { text: "Maltose" },
+    { text: "Lactose" },
+    { text: "Sucrose", correct: true },
+    { text: "Cellobiose" },
+  ]}
+  explanation="Sucrose joins glucose and fructose head-to-head at both anomeric carbons (α1→β2), leaving no free aldehyde or hemiacetal — so it cannot reduce Cu²⁺."
+/>
+
+## Wrap-up
+
+You now have the scaffolding to place any carbohydrate in the tree, predict whether it reduces, and read both projection styles. Next up: the lipids unit covers how cells store *long-term* energy with much higher density.

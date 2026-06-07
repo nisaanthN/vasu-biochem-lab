@@ -1,0 +1,167 @@
+[
+  {
+    "id": "u2-q01",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which amino acid is NOT considered essential for adult humans?",
+    "options": ["Lysine", "Methionine", "Alanine", "Threonine"],
+    "correctIndex": 2,
+    "explanation": "Alanine can be synthesised de novo (from pyruvate by alanine aminotransferase). Lysine, methionine, threonine, and 6-7 others must come from the diet."
+  },
+  {
+    "id": "u2-q02",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The only amino acid whose side chain forms covalent crosslinks (disulphide bridges) is:",
+    "options": ["Methionine", "Cysteine", "Serine", "Histidine"],
+    "correctIndex": 1,
+    "explanation": "Cysteine's -SH group oxidises with another cysteine's -SH to form a disulphide (-S-S-) bridge. Two cysteines linked = cystine. Methionine also contains sulphur but as a thioether, not -SH."
+  },
+  {
+    "id": "u2-q03",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "An amino acid has pKa values of 2.0 (α-COOH), 9.0 (α-NH₃⁺), and 12.5 (side chain). Its pI is closest to:",
+    "options": ["2.0", "5.5", "9.0", "10.75"],
+    "correctIndex": 3,
+    "explanation": "Side-chain pKa of 12.5 marks this as a basic amino acid (likely arginine, pKa ~12.5). For basic amino acids, pI = average of the two highest pKa values = (9.0 + 12.5) / 2 = 10.75."
+  },
+  {
+    "id": "u2-q04",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which amino acid contains an imidazole ring with a pKa near physiological pH?",
+    "options": ["Tryptophan", "Tyrosine", "Histidine", "Proline"],
+    "correctIndex": 2,
+    "explanation": "Histidine's imidazole side-chain has pKa ~6.0 — uniquely placed to gain/lose a proton at physiological pH, which is why histidine residues do proton shuttling in many enzyme active sites."
+  },
+  {
+    "id": "u2-q05",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "The Ninhydrin test gives a purple colour (Ruhemann's purple) with:",
+    "options": ["Aromatic amino acids only", "All α-amino acids except proline (which gives yellow)", "Only acidic amino acids", "Only basic amino acids"],
+    "correctIndex": 1,
+    "explanation": "Ninhydrin reacts with the free α-amino group of any standard amino acid to give Ruhemann's purple. Proline's secondary amine cannot form the same intermediate — it gives a yellow product instead."
+  },
+  {
+    "id": "u2-q06",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which color reaction is specific to tyrosine?",
+    "options": ["Biuret", "Millon's", "Ninhydrin", "Sakaguchi"],
+    "correctIndex": 1,
+    "explanation": "Millon's reagent (mercuric nitrate in nitric acid) gives a red colour specifically with tyrosine due to its phenolic hydroxyl. Biuret is general (peptide bond), Ninhydrin general (α-amino), Sakaguchi specific for arginine."
+  },
+  {
+    "id": "u2-q07",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "question": "A protein with pI 9.4 will, at pH 7.0, migrate in an electric field toward:",
+    "options": ["The anode (positive electrode)", "The cathode (negative electrode)", "Neither — it has no net charge", "It depends on temperature"],
+    "correctIndex": 1,
+    "explanation": "At pH 7 (below pI), the protein is net positively charged. Positive ions migrate toward the negative electrode (cathode). This is the basis of isoelectric focusing and SDS-PAGE behaviour for basic proteins."
+  },
+  {
+    "id": "u2-q08",
+    "unitId": "unit-2",
+    "subTopicId": "amino-acid-classification",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Which amino acids absorb UV light at 280 nm and are used to quantify protein concentration spectrophotometrically?",
+    "options": ["Asp, Glu", "Lys, Arg, His", "Phe, Tyr, Trp", "Ser, Thr, Cys"],
+    "correctIndex": 2,
+    "explanation": "The aromatic residues phenylalanine, tyrosine, and tryptophan absorb at 280 nm, with tryptophan dominating. The Beer-Lambert law lets us calculate protein concentration from A₂₈₀."
+  },
+  {
+    "id": "u2-q09",
+    "unitId": "unit-2",
+    "subTopicId": "protein-structure",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The peptide bond is best described as:",
+    "options": ["A flexible single bond with free rotation", "A planar partial double bond with restricted rotation", "An ionic bond between charged groups", "A hydrogen bond between backbone atoms"],
+    "correctIndex": 1,
+    "explanation": "The C-N bond of a peptide has partial double-bond character due to resonance with the C=O. This makes the six atoms of the peptide unit coplanar and restricts rotation — a foundational geometric constraint for protein folding."
+  },
+  {
+    "id": "u2-q10",
+    "unitId": "unit-2",
+    "subTopicId": "protein-structure",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "α-helix is stabilised primarily by:",
+    "options": ["Hydrophobic interactions between side chains", "Disulphide bonds", "Hydrogen bonds between backbone C=O and N-H (residue i and i+4)", "Ionic salt bridges"],
+    "correctIndex": 2,
+    "explanation": "α-helix has 3.6 residues per turn, with backbone H-bonds connecting the carbonyl oxygen of residue i to the amide hydrogen of residue i+4. Side chains point outward and don't participate."
+  },
+  {
+    "id": "u2-q11",
+    "unitId": "unit-2",
+    "subTopicId": "protein-structure",
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "question": "Which amino acids are 'helix breakers'?",
+    "options": ["Alanine and leucine", "Proline and glycine", "Aspartate and glutamate", "Lysine and arginine"],
+    "correctIndex": 1,
+    "explanation": "Proline's ring locks its φ angle and removes its N-H (so it can't donate the backbone H-bond). Glycine's lack of a side chain gives it too much conformational freedom. Both disrupt α-helix continuity."
+  },
+  {
+    "id": "u2-q12",
+    "unitId": "unit-2",
+    "subTopicId": "protein-structure",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Quaternary structure refers to:",
+    "options": ["The amino acid sequence", "Local secondary structures", "The overall 3D fold of a single chain", "The arrangement of multiple polypeptide chains"],
+    "correctIndex": 3,
+    "explanation": "Quaternary structure is the assembly of two or more polypeptide chains (subunits) into a functional protein. Haemoglobin (α₂β₂), insulin (hexamer storage form), and antibodies (2 heavy + 2 light) are classic examples."
+  },
+  {
+    "id": "u2-q13",
+    "unitId": "unit-2",
+    "subTopicId": "protein-structure",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "8 M urea + β-mercaptoethanol denatures a protein. After dialysis to remove both reagents, the protein refolds correctly. This demonstrates:",
+    "options": ["Tertiary structure is genetically encoded", "Disulphide bonds form spontaneously without enzymes", "Primary structure determines tertiary structure (Anfinsen's principle)", "Denaturation is always irreversible"],
+    "correctIndex": 2,
+    "explanation": "Anfinsen's 1961 ribonuclease experiment: if the sequence (primary) is intact, the protein can spontaneously refold to the same tertiary structure — proving the information for the fold lives in the sequence. The Nobel-winning insight."
+  },
+  {
+    "id": "u2-q14",
+    "unitId": "unit-2",
+    "subTopicId": "protein-structure",
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "question": "Heating a protein solution to 70 °C destroys its activity. The bond likely intact is the:",
+    "options": ["α-helix backbone H-bond", "Disulphide bond", "Hydrophobic core packing", "Ionic salt bridge"],
+    "correctIndex": 1,
+    "explanation": "Disulphide bonds are covalent and require reducing agents (e.g., β-ME, DTT) to break. Heat disrupts non-covalent interactions: H-bonds, hydrophobic packing, ionic interactions — collapsing secondary/tertiary/quaternary structure while disulphides remain."
+  },
+  {
+    "id": "u2-q15",
+    "unitId": "unit-2",
+    "subTopicId": "protein-structure",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "The Biuret test gives a violet colour because of:",
+    "options": ["α-amino groups", "Aromatic side chains", "Peptide bonds (≥ 2 needed)", "Sulphur-containing side chains"],
+    "correctIndex": 2,
+    "explanation": "Biuret reagent (Cu²⁺ in alkali) forms a violet coordination complex with peptide bonds. Requires at least two peptide bonds (i.e., tripeptide or larger). Free amino acids give a negative test."
+  }
+]

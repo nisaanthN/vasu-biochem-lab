@@ -1,0 +1,200 @@
+[
+  {
+    "id": "u1-q01",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which of the following is a ketohexose?",
+    "options": ["Glucose", "Fructose", "Galactose", "Mannose"],
+    "correctIndex": 1,
+    "explanation": "Fructose has its carbonyl as a ketone on C2 and contains 6 carbons — a ketohexose. The other three are aldohexoses."
+  },
+  {
+    "id": "u1-q02",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which disaccharide is non-reducing?",
+    "options": ["Maltose", "Lactose", "Sucrose", "Cellobiose"],
+    "correctIndex": 2,
+    "explanation": "Sucrose has α(1→2)β glycosidic linkage joining the anomeric carbons of glucose and fructose — neither carbon is free to open to an aldehyde/ketone, so sucrose cannot reduce Cu²⁺."
+  },
+  {
+    "id": "u1-q03",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "The brick-red precipitate observed with Benedict's reagent is:",
+    "options": ["CuO", "Cu(OH)₂", "Cu₂O", "Cu₂SO₄"],
+    "correctIndex": 2,
+    "explanation": "Reducing sugars reduce Cu²⁺ to Cu⁺, which precipitates as cuprous oxide (Cu₂O) — characteristic brick-red colour."
+  },
+  {
+    "id": "u1-q04",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Cellulose differs from starch primarily in its:",
+    "options": ["Monomer (glucose vs galactose)", "Glycosidic linkage (β-1,4 vs α-1,4)", "Branching frequency", "Anomeric carbon configuration"],
+    "correctIndex": 1,
+    "explanation": "Both are glucose homopolymers. Cellulose has β-1,4 linkages forming straight chains; starch has α-1,4 with α-1,6 branches in amylopectin. Humans lack β-glucosidase, hence cellulose passes as dietary fibre."
+  },
+  {
+    "id": "u1-q05",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "Seliwanoff's test (resorcinol in HCl) gives a fast cherry-red colour with:",
+    "options": ["Glucose", "Fructose", "Maltose", "Cellulose"],
+    "correctIndex": 1,
+    "explanation": "Seliwanoff's distinguishes ketoses (fast deep red) from aldoses (slow faint). Fructose is a ketose — rapid dehydration to hydroxymethylfurfural, which couples with resorcinol."
+  },
+  {
+    "id": "u1-q06",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Glycogen branching frequency compared to amylopectin is:",
+    "options": ["Less frequent (every 30-40 glucose)", "More frequent (every 8-12 glucose)", "Identical", "Glycogen is unbranched"],
+    "correctIndex": 1,
+    "explanation": "Glycogen branches every 8-12 glucose units; amylopectin branches every 24-30. Denser branching gives glycogen more terminal residues, allowing faster glycogenolysis."
+  },
+  {
+    "id": "u1-q07",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "question": "A patient with galactosemia (galactose-1-phosphate uridyltransferase deficiency) accumulates galactose-1-phosphate. Which dietary recommendation is most important?",
+    "options": ["Restrict fructose-containing foods", "Restrict all polysaccharides", "Restrict milk and lactose-containing foods", "Restrict sucrose only"],
+    "correctIndex": 2,
+    "explanation": "Lactose (milk sugar) is hydrolysed to glucose + galactose. Restricting milk and dairy avoids galactose intake, preventing toxic accumulation of galactose-1-phosphate which causes cataracts, hepatomegaly, and intellectual disability."
+  },
+  {
+    "id": "u1-q08",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which of these is an aldopentose?",
+    "options": ["Glucose", "Fructose", "Ribose", "Galactose"],
+    "correctIndex": 2,
+    "explanation": "Ribose is a 5-carbon (pentose) sugar with an aldehyde at C1 — an aldopentose. It forms the sugar backbone of RNA; its 2-deoxy variant is the backbone of DNA."
+  },
+  {
+    "id": "u1-q09",
+    "unitId": "unit-1",
+    "subTopicId": "carbohydrate-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The iodine test gives a blue-black colour specifically with:",
+    "options": ["Glucose", "Lactose", "Starch", "Cellulose"],
+    "correctIndex": 2,
+    "explanation": "Iodine forms an inclusion complex with the helical α-1,4 amylose component of starch — blue-black colour. Cellulose has β-1,4 linkages and forms straight chains, not helices, so doesn't give the test."
+  },
+  {
+    "id": "u1-q10",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which is a derived lipid?",
+    "options": ["Triglyceride", "Phosphatidylcholine", "Cerebroside", "Cholesterol"],
+    "correctIndex": 3,
+    "explanation": "In Bloor's classification, derived lipids include fatty acids, sterols (cholesterol, ergosterol), and fat-soluble vitamins. Triglycerides are simple lipids; phospholipids and glycolipids are compound lipids."
+  },
+  {
+    "id": "u1-q11",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "A fat with a high iodine number (170) is:",
+    "options": ["Highly saturated", "Highly unsaturated", "Made of short-chain fatty acids", "A wax"],
+    "correctIndex": 1,
+    "explanation": "Iodine number measures grams of I₂ absorbed per 100 g of fat by addition across C=C bonds. High iodine number = many double bonds = highly unsaturated (e.g., linseed oil)."
+  },
+  {
+    "id": "u1-q12",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "A high saponification number indicates:",
+    "options": ["Long-chain fatty acids", "Short-chain fatty acids", "Many double bonds", "Trans fatty acids"],
+    "correctIndex": 1,
+    "explanation": "Saponification number = mg KOH to saponify 1 g of fat. Short-chain fatty acids → more ester groups per gram → higher SN. Coconut oil (medium-chain triglycerides) has SN ~250-264."
+  },
+  {
+    "id": "u1-q13",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Essential fatty acids include:",
+    "options": ["Palmitic and stearic acid", "Oleic acid only", "Linoleic and α-linolenic acid", "Arachidonic acid only"],
+    "correctIndex": 2,
+    "explanation": "Linoleic (ω-6) and α-linolenic (ω-3) are strictly essential — humans cannot synthesise the ω-3 and ω-6 double bonds. Arachidonic is conditionally essential (made from linoleic)."
+  },
+  {
+    "id": "u1-q14",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Phospholipids form bilayers because they are:",
+    "options": ["Completely hydrophobic", "Completely hydrophilic", "Amphipathic (polar head + non-polar tails)", "Negatively charged molecules"],
+    "correctIndex": 2,
+    "explanation": "Phospholipids have a hydrophilic phosphate-containing head and two hydrophobic acyl tails. In water, the hydrophobic effect drives self-assembly into bilayers with heads facing water and tails sequestered inward."
+  },
+  {
+    "id": "u1-q15",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Lecithin is another name for:",
+    "options": ["Phosphatidylserine", "Phosphatidylcholine", "Phosphatidylinositol", "Phosphatidylethanolamine"],
+    "correctIndex": 1,
+    "explanation": "Lecithin = phosphatidylcholine, the most abundant membrane phospholipid in animal cells and a major component of lung surfactant (dipalmitoyl-phosphatidylcholine specifically)."
+  },
+  {
+    "id": "u1-q16",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "question": "A statin drug works by inhibiting HMG-CoA reductase. The molecular target is in the synthesis pathway of:",
+    "options": ["Triglycerides", "Phospholipids", "Cholesterol", "Bile acids"],
+    "correctIndex": 2,
+    "explanation": "HMG-CoA reductase is the rate-limiting enzyme of cholesterol synthesis (converts HMG-CoA to mevalonate). Statins competitively inhibit it, lowering hepatic cholesterol synthesis, upregulating LDL receptors, and reducing serum LDL."
+  },
+  {
+    "id": "u1-q17",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Which fat-soluble vitamin is required for γ-carboxylation of clotting factors?",
+    "options": ["Vitamin A", "Vitamin D", "Vitamin E", "Vitamin K"],
+    "correctIndex": 3,
+    "explanation": "Vitamin K is the cofactor for γ-glutamyl carboxylase, which post-translationally carboxylates Glu residues on factors II, VII, IX, X, and proteins C and S — required for Ca²⁺ binding and clotting activity. Warfarin antagonises K's cycle."
+  },
+  {
+    "id": "u1-q18",
+    "unitId": "unit-1",
+    "subTopicId": "lipid-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "Bile salts emulsify dietary fat. Their amphipathic nature comes from:",
+    "options": ["A polar steroid nucleus and non-polar side chain", "A polar side chain and hydrophilic faces on a steroid ring", "Equal hydrophilic and hydrophobic halves at opposite poles", "A non-polar steroid with a polar amino acid conjugate"],
+    "correctIndex": 3,
+    "explanation": "Bile salts are derived from cholesterol with the addition of hydroxyl groups (on the steroid nucleus) and conjugation of glycine or taurine (forming a polar tail). The cholesterol nucleus is hydrophobic; the conjugated tail is hydrophilic — amphipathic detergents."
+  }
+]

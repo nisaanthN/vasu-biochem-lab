@@ -1,0 +1,144 @@
+---
+unit: unit-3
+topicId: enzyme-classification
+title: Enzyme classification (IUBMB)
+blurb: Six classes — oxidoreductases, transferases, hydrolases, lyases, isomerases, ligases. EC numbers and examples.
+estimatedMinutes: 10
+xp: 20
+learningObjectives:
+  - Assign any enzyme to one of the six IUBMB classes
+  - Recognize EC numbers and decode the first digit
+  - Match common pharmacy-relevant enzymes to their class
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 6"
+  - "Satyanarayana Biochemistry, 5e, Ch. 7"
+---
+
+## Why we classify enzymes
+
+Without a system, "trypsin", "ATPase", and "hexokinase" are arbitrary names. The IUBMB system gives every enzyme a four-number EC code (`EC a.b.c.d`) that pinpoints its **reaction type, substrate, and bond involved**. Pharmacy drug targets, diagnostic markers, and metabolic pathways all reference EC classes — so learning to decode the first digit alone unlocks most of the syllabus.
+
+## The six classes
+
+<KeyPoint>
+Mnemonic: **Over The Hill, Like It Loves** — Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases.
+</KeyPoint>
+
+### EC 1 — Oxidoreductases
+
+Catalyse **oxidation–reduction** (electron transfer). Always need a coenzyme (NAD⁺/NADH, NADP⁺/NADPH, FAD/FADH₂) or a metal as the electron acceptor or donor.
+
+Sub-classes: dehydrogenases (transfer H), oxidases (use O₂, no H₂O₂), peroxidases (use H₂O₂), reductases, oxygenases.
+
+**Examples in pharmacy**:
+- Alcohol dehydrogenase (target of disulfiram in alcohol-use disorder)
+- Lactate dehydrogenase (LDH — myocardial-infarction biomarker)
+- HMG-CoA reductase (target of all statins)
+- Xanthine oxidase (target of allopurinol in gout)
+
+### EC 2 — Transferases
+
+Transfer a chemical group (-CH₃, -NH₂, -CHO, phosphate, glucose) **from one substrate to another**.
+
+Sub-classes: methyltransferases, aminotransferases (transaminases), kinases (phosphate transfer from ATP), phosphorylases (phosphate transfer using inorganic P).
+
+**Examples**:
+- AST (aspartate aminotransferase) — liver-function test, MI biomarker
+- ALT (alanine aminotransferase) — liver-function test
+- Hexokinase, glucokinase, pyruvate kinase — glycolytic steps
+- Catechol-O-methyltransferase (COMT — target of entacapone in Parkinson's)
+- Thiopurine S-methyltransferase (TPMT — pharmacogenomic concern for azathioprine)
+
+### EC 3 — Hydrolases
+
+Catalyse **bond cleavage with insertion of water** (no coenzyme needed). The most heterogeneous class.
+
+Sub-classes: esterases (cleave esters), peptidases / proteases (peptide bonds), glycosidases (glycosidic bonds), nucleases (phosphodiester), lipases, phosphatases.
+
+**Examples**:
+- Pepsin, trypsin, chymotrypsin — digestive proteases
+- Acetylcholinesterase — target of neostigmine, donepezil, organophosphates
+- α-amylase (salivary, pancreatic) — starch digestion
+- ATPase (e.g., Na⁺/K⁺-ATPase) — target of cardiac glycosides like digoxin
+- Alkaline phosphatase — biomarker for bone disease, cholestasis
+
+### EC 4 — Lyases
+
+Cleave bonds **without hydrolysis or oxidation**, often forming a new double bond or ring. Equivalently, the reverse reactions *add* groups across double bonds.
+
+Sub-classes: decarboxylases (remove -COOH as CO₂), dehydratases (remove water), aldolases.
+
+**Examples**:
+- Aldolase (glycolysis step 4)
+- Fumarase (TCA cycle)
+- Histidine decarboxylase → histamine
+- DOPA decarboxylase (also called aromatic-L-amino-acid decarboxylase — target of carbidopa)
+- Pyruvate decarboxylase (yeast fermentation; not in human glycolysis)
+
+### EC 5 — Isomerases
+
+**Intramolecular rearrangements**: substrate and product have the same atoms in different arrangements.
+
+Sub-classes: racemases (D↔L), epimerases, cis-trans isomerases, mutases (move a group within the molecule).
+
+**Examples**:
+- Phosphohexose isomerase (glycolysis step 2: G6P ↔ F6P)
+- Phosphoglycerate mutase (glycolysis step 8)
+- Triose phosphate isomerase (glycolysis step 5)
+- Topoisomerase (DNA — target of quinolones, etoposide, irinotecan)
+
+### EC 6 — Ligases (synthetases)
+
+**Join two molecules** with **simultaneous ATP hydrolysis** as the energy source.
+
+Sub-classes: synthetases that form C–O, C–S, C–N, or C–C bonds.
+
+**Examples**:
+- DNA ligase (joins Okazaki fragments)
+- Aminoacyl-tRNA synthetases (charge tRNAs for translation)
+- Pyruvate carboxylase (gluconeogenesis — converts pyruvate to oxaloacetate, ATP-dependent)
+- Acetyl-CoA carboxylase (fatty-acid synthesis initiation)
+
+<Callout variant="info" title="Distinguish ligase from kinase">
+A kinase **transfers** a phosphate; it's a transferase (class 2). A ligase **joins two molecules** and uses ATP to drive the energetically uphill reaction. The energy source is the same (ATP) — the operation is different.
+</Callout>
+
+## Decoding an EC number
+
+`EC 1.1.1.27` — lactate dehydrogenase. Reading left to right:
+
+| Digit | Meaning | Value for LDH |
+| :--- | :--- | :--- |
+| 1 | Class | 1 (oxidoreductase) |
+| 2 | Sub-class (group transferred / acted on) | 1 (acts on CHOH group) |
+| 3 | Sub-sub-class (acceptor) | 1 (uses NAD⁺/NADP⁺ as acceptor) |
+| 4 | Serial number within the sub-sub-class | 27 |
+
+You only need to memorise the **first digit** for any common enzyme — that's the level questions test.
+
+## Special enzyme categories worth knowing
+
+- **Holoenzyme** = apoenzyme (protein) + cofactor (metal ion or coenzyme).
+- **Isoenzymes (isozymes)** = different proteins catalysing the same reaction, often with different kinetics. LDH-1 to LDH-5 in different tissues; CPK-MM (muscle), CPK-MB (heart), CPK-BB (brain).
+- **Zymogens (proenzymes)** = inactive precursors activated by limited proteolysis. Pepsinogen → pepsin; chymotrypsinogen → chymotrypsin; all clotting factors.
+- **Monomeric vs allosteric** = follow MM kinetics vs sigmoidal kinetics (see the Michaelis-Menten note).
+- **Coenzymes** = organic cofactors, often vitamin-derived. NAD⁺/NADP⁺ (niacin), FAD/FMN (riboflavin), CoA (pantothenic acid), PLP (B6), TPP (B1), THF (folate), biotin (B7), B12 (cobalamin).
+
+<Mnemonic phrase="Statin Mnemonic — HMG-CoA reductase is class 1 because it REDUCES HMG-CoA to mevalonate, the rate-limiting step of cholesterol synthesis.">
+The drug class is named after the enzyme it inhibits. Atorvastatin, rosuvastatin, simvastatin all bind the HMG-CoA reductase active site, lowering cholesterol synthesis.
+</Mnemonic>
+
+<InlineCheckpoint
+  question="Which class does pyruvate carboxylase belong to?"
+  options={[
+    { text: "EC 1 — Oxidoreductase" },
+    { text: "EC 2 — Transferase" },
+    { text: "EC 4 — Lyase" },
+    { text: "EC 6 — Ligase", correct: true },
+  ]}
+  explanation="Pyruvate carboxylase joins pyruvate and CO₂ to form oxaloacetate, with ATP hydrolysis providing the energy. Joining + ATP = ligase. The 'decarboxylase' family is class 4, but 'carboxylase' that consumes ATP is class 6."
+/>
+
+## Wrap-up
+
+You can now decode any EC first digit, recognise which enzymes power which drug classes, and distinguish ligase from kinase. Next note: the kinetic formalism — Michaelis-Menten — that every enzyme question is built on.

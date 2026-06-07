@@ -1,0 +1,117 @@
+---
+unit: unit-4
+topicId: etc-oxphos
+title: Electron transport chain & oxidative phosphorylation
+blurb: Complexes I–IV, ATP synthase, chemiosmotic theory, and ATP yield calculations.
+estimatedMinutes: 16
+xp: 25
+learningObjectives:
+  - Order the ETC complexes and their substrates and products
+  - Explain Mitchell's chemiosmotic hypothesis
+  - Calculate ATP yield given NADH and FADH₂ inputs
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 19"
+  - "Satyanarayana Biochemistry, 5e, Ch. 11"
+---
+
+## The bioenergetic problem
+
+By the time pyruvate enters mitochondria and the TCA cycle has run, you've harvested most of glucose's chemical energy not as ATP but as **electrons riding on NADH and FADH₂**. Those electrons must be transferred to oxygen — releasing energy in controlled steps — and the energy released must somehow be captured to make ATP. The mitochondrial inner membrane is the apparatus that does both.
+
+## ATP — the universal currency
+
+Adenosine triphosphate hydrolyses to ADP + Pᵢ with a standard ΔG°' of about **−30.5 kJ/mol** (−7.3 kcal/mol). What makes ATP "high energy":
+
+1. **Electrostatic repulsion** between three negative phosphates (relieved on hydrolysis).
+2. **Resonance stabilisation** of the released phosphate.
+3. **Solvation** of products.
+
+Other high-energy phosphates (with even larger ΔG°' of hydrolysis): phosphoenolpyruvate (−61.9), 1,3-bisphosphoglycerate (−49.4), creatine phosphate (−43.1). The ones with higher energy than ATP donate phosphate *to* ADP (substrate-level phosphorylation in glycolysis). The lower-energy phosphates accept from ATP (glucose phosphorylation by hexokinase).
+
+## The electron transport chain — four complexes
+
+Located in the **inner mitochondrial membrane**. Four protein complexes shuttle electrons from NADH or FADH₂ to O₂, with the energy released used to pump protons (H⁺) from matrix to intermembrane space.
+
+| Complex | Name | Reaction | Inhibitors | Protons pumped |
+| :--- | :--- | :--- | :--- | :--- |
+| I | NADH dehydrogenase | NADH → ubiquinone (Q) | Rotenone, amobarbital | 4 |
+| II | Succinate dehydrogenase | FADH₂ → ubiquinone (Q) | Malonate, TFP | 0 |
+| III | Cytochrome bc₁ | Q → cytochrome c | Antimycin A | 2 |
+| IV | Cytochrome c oxidase | cyt c → O₂ → H₂O | CN⁻, CO, N₃⁻, H₂S | 4 |
+
+Plus **ATP synthase (Complex V)** — uses the proton gradient to synthesise ATP from ADP + Pᵢ.
+
+<KeyPoint>
+Electrons from NADH enter at Complex I (4 H⁺ pumped). Electrons from FADH₂ enter at Complex II (0 H⁺ pumped). That's why NADH yields more ATP than FADH₂ — its electrons drive one more pumping complex.
+</KeyPoint>
+
+## The mobile carriers
+
+- **Ubiquinone (Coenzyme Q, CoQ)** — a lipid-soluble quinone that diffuses through the membrane carrying electrons (one or two) between Complex I/II and Complex III. Reduced form is ubiquinol (CoQH₂). Targeted by statins indirectly (they reduce CoQ synthesis as a side-effect of HMG-CoA inhibition).
+- **Cytochrome c** — a small water-soluble haem protein in the intermembrane space that shuttles electrons one at a time between Complex III and Complex IV.
+
+## Chemiosmotic theory (Peter Mitchell, 1961)
+
+Mitchell's then-controversial 1961 hypothesis — now textbook fact and a Nobel Prize:
+
+1. The ETC pumps **H⁺ across the inner membrane** as it transfers electrons.
+2. This builds a **proton gradient** (the proton motive force, PMF) — both a pH difference (~0.5 units) and a membrane potential (~−170 mV inside).
+3. Protons flow back through **ATP synthase**, driving rotation of its membrane-embedded subunit, which mechanically forces conformational changes that phosphorylate ADP.
+
+ATP synthase is a literal **rotary molecular motor**. The F₀ portion (in membrane) rotates as protons flow through; the F₁ portion (in matrix) has three β subunits that cycle through L (loose), T (tight), and O (open) states, binding ADP + Pᵢ, catalysing the bond, and releasing ATP.
+
+<Callout variant="info" title="Pharmacy connection: uncouplers">
+**Uncouplers** (DNP — 2,4-dinitrophenol; sometimes endogenous UCP-1 in brown adipose) are protonophores that carry H⁺ back across the inner membrane *without* going through ATP synthase. The proton gradient dissipates as heat. ETC runs maximally, O₂ is consumed maximally, but ATP synthesis collapses. DNP was used as a weight-loss drug in the 1930s and killed people (fatal hyperthermia).
+</Callout>
+
+## ATP yields (modern values)
+
+| Carrier | P/O ratio | Source |
+| :--- | :--- | :--- |
+| 1 NADH | ~2.5 ATP | Glycolysis (cytosolic, transported in via malate-aspartate shuttle), TCA, β-oxidation |
+| 1 FADH₂ | ~1.5 ATP | TCA (succinate → fumarate), β-oxidation |
+
+Older textbooks (and many Indian pharmacy textbooks) still use the integer values **3 ATP per NADH and 2 ATP per FADH₂**. Both sets of values appear in different exams — know which your professor uses.
+
+### Per-glucose accounting (using modern values, malate-aspartate shuttle in liver / heart)
+
+| Stage | NADH | FADH₂ | GTP/ATP direct | ATP equivalents |
+| :--- | :--- | :--- | :--- | :--- |
+| Glycolysis | 2 | 0 | 2 (net) | 2 + 2 × 2.5 = 7 |
+| Pyruvate → Acetyl-CoA (×2) | 2 | 0 | 0 | 2 × 2.5 = 5 |
+| TCA (×2 turns) | 6 | 2 | 2 (GTP) | 2 + 6 × 2.5 + 2 × 1.5 = 20 |
+| **Total** | 10 | 2 | 4 | **32 ATP** |
+
+Using older integer values: **38 ATP**. Either answer can be defended depending on the textbook.
+
+## ETC inhibitors — pharmacology
+
+A surprising number of drugs and poisons hit the ETC:
+
+- **Rotenone** (insecticide): Complex I.
+- **Amytal** (amobarbital): Complex I.
+- **Antimycin A**: Complex III.
+- **Cyanide (CN⁻)**, **Carbon monoxide (CO)**, **Azide (N₃⁻)**, **Hydrogen sulphide (H₂S)**: Complex IV.
+- **Oligomycin**: ATP synthase (specifically F₀, the channel).
+- **DNP**: uncoupler.
+- **Atovaquone** (antimalarial, antifungal): Complex III in protozoa.
+- **Metformin** (T2DM): mild Complex I inhibitor — likely contributes to its glucose-lowering mechanism.
+
+<Mnemonic phrase="Cyanide kills at Complex IV — it binds the haem-iron of cytochrome a₃ and stops electron transfer to O₂.">
+This is why hydroxocobalamin (vitamin B12 precursor) is a cyanide antidote — it sequesters cyanide as cyanocobalamin. Sodium nitrite + thiosulphate (Lily kit) works by forming methaemoglobin which competes with cyt c oxidase for CN⁻.
+</Mnemonic>
+
+<InlineCheckpoint
+  question="If cyanide is added to a cell, you expect:"
+  options={[
+    { text: "Increased ATP synthesis as a stress response" },
+    { text: "Halted electron transport at Complex IV, accumulated NADH, halted TCA, lactic acidosis", correct: true },
+    { text: "Increased H⁺ pumping at Complex I to compensate" },
+    { text: "Switching to FADH₂-only metabolism" },
+  ]}
+  explanation="CN⁻ binds Complex IV (cyt c oxidase). Electrons back up: NADH cannot be reoxidised, so the TCA cycle stalls. The cell switches to lactic fermentation to regenerate NAD⁺ → lactic acidosis. ATP collapses. Death follows rapidly."
+/>
+
+## Wrap-up
+
+You can now name the four complexes, explain proton-motive force, compute ATP yield two ways, and tie a list of poisons and drugs to their ETC targets. The next unit dives into the metabolic pathways that feed all this — glycolysis and the TCA cycle.

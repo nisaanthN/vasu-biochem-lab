@@ -1,0 +1,222 @@
+[
+  {
+    "id": "u3-q01",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which class does lactate dehydrogenase (LDH) belong to?",
+    "options": ["Oxidoreductase", "Transferase", "Hydrolase", "Lyase"],
+    "correctIndex": 0,
+    "explanation": "LDH catalyses an oxidation-reduction reaction (pyruvate + NADH ↔ lactate + NAD⁺). Any 'dehydrogenase' is class 1 — oxidoreductase."
+  },
+  {
+    "id": "u3-q02",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "An enzyme that adds a phosphate from ATP to glucose is classified as a:",
+    "options": ["Hydrolase", "Transferase (kinase)", "Lyase", "Ligase"],
+    "correctIndex": 1,
+    "explanation": "Hexokinase / glucokinase transfers a phosphoryl group from ATP to glucose — a transferase (EC 2). Specifically, kinases are phosphate-transfer transferases."
+  },
+  {
+    "id": "u3-q03",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "DNA ligase joins Okazaki fragments using ATP hydrolysis. Its EC class is:",
+    "options": ["Hydrolase", "Lyase", "Isomerase", "Ligase"],
+    "correctIndex": 3,
+    "explanation": "Ligases join two molecules with concurrent ATP/GTP hydrolysis. DNA ligase forms a phosphodiester bond between adjacent fragments using ATP — class 6 (ligase)."
+  },
+  {
+    "id": "u3-q04",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Pyruvate decarboxylase converts pyruvate to acetaldehyde + CO₂. It is a:",
+    "options": ["Lyase", "Oxidoreductase", "Transferase", "Hydrolase"],
+    "correctIndex": 0,
+    "explanation": "Removing CO₂ without hydrolysis or redox = decarboxylase = lyase (class 4). This enzyme is in yeast fermentation; humans don't have it (we use pyruvate dehydrogenase which IS an oxidoreductase complex)."
+  },
+  {
+    "id": "u3-q05",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Pepsin, trypsin, and chymotrypsin are all examples of:",
+    "options": ["Lyases", "Hydrolases (proteases)", "Transferases", "Ligases"],
+    "correctIndex": 1,
+    "explanation": "Proteases catalyse hydrolysis of peptide bonds — class 3 (hydrolase). All three are digestive serine proteases secreted as zymogens (pepsinogen, trypsinogen, chymotrypsinogen) and activated by limited proteolysis."
+  },
+  {
+    "id": "u3-q06",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "question": "A zymogen is best defined as:",
+    "options": ["A holoenzyme without its cofactor", "An inactive precursor activated by proteolysis", "An allosteric enzyme in its T-state", "An enzyme with feedback inhibition"],
+    "correctIndex": 1,
+    "explanation": "Zymogens (proenzymes) are inactive precursors that require proteolytic cleavage to become active. Examples: pepsinogen → pepsin (gastric acid activated), trypsinogen → trypsin (enteropeptidase), and all blood clotting factors."
+  },
+  {
+    "id": "u3-q07",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Coenzyme A is derived from which vitamin?",
+    "options": ["Thiamine (B1)", "Riboflavin (B2)", "Pantothenic acid (B5)", "Pyridoxine (B6)"],
+    "correctIndex": 2,
+    "explanation": "Coenzyme A is synthesised from pantothenic acid (vitamin B5). It serves as the acyl carrier in fatty acid metabolism, TCA cycle (acetyl-CoA), and biosynthesis."
+  },
+  {
+    "id": "u3-q08",
+    "unitId": "unit-3",
+    "subTopicId": "enzyme-classification",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Which vitamin is the precursor for NAD⁺ and NADP⁺?",
+    "options": ["Thiamine (B1)", "Niacin (B3)", "Folate (B9)", "Cobalamin (B12)"],
+    "correctIndex": 1,
+    "explanation": "Niacin (vitamin B3, nicotinic acid or nicotinamide) is the precursor of NAD⁺ and NADP⁺. Severe deficiency causes pellagra (3D's — dermatitis, diarrhoea, dementia)."
+  },
+  {
+    "id": "u3-q09",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Km is defined as the substrate concentration at which:",
+    "options": ["v = Vmax", "v = Vmax / 2", "v = 0", "v is maximum"],
+    "correctIndex": 1,
+    "explanation": "Km (Michaelis constant) is the [S] at which the reaction rate equals half of Vmax. It's an inverse measure of substrate affinity — low Km means the enzyme reaches half-max at low [S], i.e., high affinity."
+  },
+  {
+    "id": "u3-q10",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "On a Lineweaver-Burk plot, the y-intercept equals:",
+    "options": ["1/Km", "1/Vmax", "−1/Km", "Km/Vmax"],
+    "correctIndex": 1,
+    "explanation": "The double-reciprocal form is 1/v = (Km/Vmax)(1/[S]) + 1/Vmax. So slope = Km/Vmax, y-intercept = 1/Vmax, x-intercept = −1/Km."
+  },
+  {
+    "id": "u3-q11",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "A competitive inhibitor changes the Lineweaver-Burk plot by:",
+    "options": ["Increasing y-intercept; same x-intercept", "Same y-intercept; making x-intercept less negative", "Both intercepts increase", "Same slope; different intercepts"],
+    "correctIndex": 1,
+    "explanation": "Competitive inhibition: Vmax unchanged (same y-intercept = 1/Vmax) but apparent Km is increased (so −1/Km is less negative, i.e., closer to zero). Lines pivot through the y-intercept."
+  },
+  {
+    "id": "u3-q12",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "A non-competitive inhibitor produces lines that:",
+    "options": ["Intersect on the y-axis", "Intersect on the x-axis", "Are parallel", "Coincide with the baseline"],
+    "correctIndex": 1,
+    "explanation": "Non-competitive: Km unchanged (same x-intercept = −1/Km), Vmax decreased (higher y-intercept). On LB plot the inhibited and control lines intersect on the x-axis."
+  },
+  {
+    "id": "u3-q13",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "question": "Methotrexate is a structural analogue of folate and competes with folate for binding to dihydrofolate reductase (DHFR). What is its inhibition type?",
+    "options": ["Competitive", "Non-competitive", "Uncompetitive", "Mixed"],
+    "correctIndex": 0,
+    "explanation": "Methotrexate resembles folate and binds DHFR's active site, competing with the natural substrate. Increased folate (or leucovorin rescue) can outcompete it — hallmark of competitive inhibition."
+  },
+  {
+    "id": "u3-q14",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "hard",
+    "bloom": "apply",
+    "question": "An enzyme has Km = 4 mM and Vmax = 80 µmol/min. At [S] = 4 mM with a competitive inhibitor giving apparent Km = 8 mM, the rate is:",
+    "options": ["20 µmol/min", "26.7 µmol/min", "40 µmol/min", "53.3 µmol/min"],
+    "correctIndex": 1,
+    "explanation": "v = Vmax · [S] / (Km_app + [S]) = 80 · 4 / (8 + 4) = 320 / 12 = 26.67 µmol/min. With competitive inhibition, Vmax is unchanged but apparent Km doubles, so the rate at [S]=4 drops from 40 (half-Vmax baseline) to 26.7."
+  },
+  {
+    "id": "u3-q15",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Liver glucokinase has a Km of ~10 mM for glucose, much higher than hexokinase's Km of ~0.1 mM. The functional consequence is:",
+    "options": ["Glucokinase is always active", "Glucokinase only kicks in at high blood glucose (post-prandial)", "Glucokinase is product-inhibited by G6P", "Glucokinase has lower Vmax than hexokinase"],
+    "correctIndex": 1,
+    "explanation": "Glucokinase's high Km means it doesn't significantly phosphorylate glucose until blood glucose rises after a meal (>5-8 mM). This lets liver store glucose as glycogen only when there's excess, while other tissues (hexokinase, low Km) always take up glucose."
+  },
+  {
+    "id": "u3-q16",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "An enzyme with sigmoidal v vs [S] kinetics is best described as:",
+    "options": ["Monomeric", "Allosteric (cooperative)", "Inhibited", "Denatured"],
+    "correctIndex": 1,
+    "explanation": "Sigmoidal kinetics indicate cooperative binding — characteristic of multi-subunit allosteric enzymes like phosphofructokinase-1 and aspartate transcarbamoylase. The Hill equation models these better than Michaelis-Menten."
+  },
+  {
+    "id": "u3-q17",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Allopurinol inhibits xanthine oxidase by being oxidised to oxypurinol, which binds the enzyme. Allopurinol's mechanism is:",
+    "options": ["Competitive (resembles substrate)", "Suicide / mechanism-based", "Allosteric non-competitive", "Uncompetitive"],
+    "correctIndex": 1,
+    "explanation": "Allopurinol is itself a substrate that, upon catalysis, generates oxypurinol — which binds the active-site Mo with very high affinity, inactivating the enzyme. Classic example of suicide / mechanism-based inhibition used in gout treatment."
+  },
+  {
+    "id": "u3-q18",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The turnover number (kcat) of an enzyme is:",
+    "options": ["The number of enzyme molecules in a cell", "The Michaelis constant divided by Vmax", "The number of substrate molecules converted to product per active site per unit time", "The fraction of active sites bound by substrate"],
+    "correctIndex": 2,
+    "explanation": "kcat measures the maximum number of substrate molecules a single active site can convert per unit time when saturated. Vmax = kcat · [E]total. Catalase has one of the highest known kcat values (~4 × 10⁷ s⁻¹)."
+  },
+  {
+    "id": "u3-q19",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "question": "Iodoacetate irreversibly alkylates the active-site cysteine of glyceraldehyde-3-phosphate dehydrogenase (GAPDH). This is an example of:",
+    "options": ["Reversible competitive inhibition", "Irreversible covalent inhibition", "Allosteric activation", "Substrate analogue inhibition"],
+    "correctIndex": 1,
+    "explanation": "Iodoacetate covalently modifies the active-site cysteine SH, blocking catalysis permanently — irreversible covalent inhibition. Used as a classic biochemistry research tool to halt glycolysis at step 6."
+  },
+  {
+    "id": "u3-q20",
+    "unitId": "unit-3",
+    "subTopicId": "michaelis-menten",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "A patient with cyanide poisoning has fatal accumulation of lactate. The biochemical reason is:",
+    "options": ["Cyanide stimulates lactate dehydrogenase", "Cyanide inhibits Complex IV, blocking oxidative phosphorylation, forcing fermentation", "Cyanide directly inhibits lactate excretion", "Cyanide reduces NAD⁺ to NADH"],
+    "correctIndex": 1,
+    "explanation": "Cyanide binds the iron of Complex IV (cytochrome c oxidase), halting the ETC. NADH cannot be reoxidised, so the TCA cycle stops. Cells switch to lactic fermentation to regenerate NAD⁺ → lactic acidosis. Hydroxocobalamin is the antidote (sequesters CN as cyanocobalamin)."
+  }
+]

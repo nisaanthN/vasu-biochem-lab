@@ -1,0 +1,118 @@
+---
+unit: unit-2
+topicId: amino-acid-classification
+title: Amino acid classification
+blurb: Essential vs non-essential, polar/nonpolar, acidic/basic. Zwitterions, pI, and titration behavior.
+estimatedMinutes: 12
+xp: 20
+learningObjectives:
+  - Categorize the 20 standard amino acids by side-chain class
+  - Predict net charge at any pH given pKa values
+  - Identify the isoelectric point from a titration curve
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 3"
+  - "Satyanarayana Biochemistry, 5e, Ch. 4"
+---
+
+## The core formula
+
+Every standard amino acid has the same core: an **α-carbon** bonded to (1) an amino group, (2) a carboxyl group, (3) a hydrogen, and (4) a **side chain (R group)**. The R group is the source of all variation — proline is the lone exception (its amino group is part of a ring, making it an imino acid).
+
+At physiological pH the amino group is protonated (-NH₃⁺) and the carboxyl is deprotonated (-COO⁻). The molecule carries both a positive and negative charge — a **zwitterion**.
+
+## Classification by R group polarity
+
+The single classification you must drill is by side-chain chemistry.
+
+### 1. Non-polar, aliphatic (7)
+Glycine (G), Alanine (A), Valine (V), Leucine (L), Isoleucine (I), Methionine (M), Proline (P). Bury inside protein cores driven by hydrophobic effect.
+
+### 2. Aromatic (3)
+Phenylalanine (F), Tyrosine (Y), Tryptophan (W). Absorb UV at 280 nm — the basis of protein quantification by spectrophotometry.
+
+### 3. Polar, uncharged (5)
+Serine (S), Threonine (T), Cysteine (C), Asparagine (N), Glutamine (Q). Hydroxyls and amides — H-bond donors and acceptors.
+
+### 4. Acidic (negatively charged at pH 7) (2)
+Aspartate (D), Glutamate (E). Side-chain carboxyl.
+
+### 5. Basic (positively charged at pH 7) (3)
+Lysine (K), Arginine (R), Histidine (H). Histidine's pKa is ~6.0, so it's the *only* amino acid that meaningfully buffers at physiological pH — that's why it sits in enzyme active sites doing proton shuttling.
+
+<Mnemonic phrase="Essential AAs: PVT TIM HALL — Phe, Val, Thr, Trp, Ile, Met, His, Arg, Leu, Lys">
+Indian pharmacy textbooks list these 9 (or 10 with arginine, which is conditionally essential) as nutritionally essential — must come from diet. Histidine and arginine are sometimes called "semi-essential" because they're essential in infants but not stable adults.
+</Mnemonic>
+
+## Zwitterions and isoelectric point
+
+At low pH (acidic), all ionisable groups are protonated: -NH₃⁺ and -COOH. Net charge **+1**.
+At high pH (basic), all are deprotonated: -NH₂ and -COO⁻. Net charge **−1**.
+Somewhere between these, the molecule has zero net charge — its **isoelectric point (pI)**.
+
+For an amino acid with only the α-amino and α-carboxyl groups (most non-polar and polar uncharged AAs):
+
+```
+pI = (pKa(COOH) + pKa(NH₃⁺)) / 2
+```
+
+For glycine specifically: pKa(COOH) = 2.34, pKa(NH₃⁺) = 9.60, so pI = 5.97.
+
+For amino acids with an ionisable side chain:
+
+- **Acidic** (Asp, Glu): pI = average of the two **lowest** pKa values (the COOH and the side-chain COOH).
+- **Basic** (Lys, Arg, His): pI = average of the two **highest** pKa values (the NH₃⁺ and the side-chain basic group).
+
+### Worked example: aspartate
+
+pKa₁ (α-COOH) = 1.88; pKa₂ (β-COOH side chain) = 3.65; pKa₃ (NH₃⁺) = 9.60.
+
+Aspartate is acidic. Average the two lowest:
+pI = (1.88 + 3.65) / 2 = **2.77**.
+
+At pH 2.77, aspartate has equal positive (NH₃⁺) and negative (one COO⁻) charges — net zero.
+
+<Callout variant="info" title="Pharmacy connection: isoelectric precipitation">
+Insulin's pI is ~5.4. Industrial purification of insulin precipitates it at pH 5.4 where its solubility is minimum (no net charge → no electrostatic repulsion between molecules → aggregation). This is the same logic behind casein precipitation in cheese-making and the recrystallisation step in many protein-drug manufacturing processes.
+</Callout>
+
+## Titration curve and net charge
+
+A titration curve for an amino acid has **inflection points at each pKa**. Net charge at any pH can be computed by summing the fractional protonation of every ionisable group:
+
+```
+Fraction protonated = 1 / (1 + 10^(pH − pKa))
+```
+
+For glycine at pH 7: COOH is essentially fully deprotonated (pH ≫ pKa1), NH₃⁺ is essentially fully protonated (pH ≪ pKa2). Net charge ≈ 0 (one each, cancelling).
+
+<Callout variant="success" title="Try the pI titration experiment">
+The isoelectric-point titration simulator lets you pick an amino acid, drag a pH slider, and watch the net charge change continuously — and shows which direction it migrates in a virtual electrophoresis gel. It's the fastest way to develop intuition for how pI controls electrophoretic mobility.
+</Callout>
+
+## Colour reactions used in qualitative analysis
+
+For practical viva and qualitative tests:
+
+| Test | Reagent | Detects | Colour |
+| :--- | :--- | :--- | :--- |
+| Ninhydrin | Ninhydrin | All α-amino acids | Purple (Ruhemann's purple) |
+| Biuret | Cu²⁺ in alkali | **Peptide bond** | Violet (proteins only) |
+| Xanthoproteic | conc. HNO₃ | Aromatic AAs (Phe, Tyr, Trp) | Yellow (orange in alkali) |
+| Millon | Hg(NO₃)₂ in HNO₃ | Tyrosine specifically | Red |
+| Pauly | Diazotised sulphanilic acid | Tyrosine, Histidine | Red |
+| Sakaguchi | α-Naphthol + NaOCl | Arginine | Red |
+
+<InlineCheckpoint
+  question="An amino acid has pKa values of 2.20 (α-COOH), 8.95 (α-NH₃⁺), and 10.53 (side chain). Its pI is closest to:"
+  options={[
+    { text: "2.20" },
+    { text: "5.58" },
+    { text: "9.74", correct: true },
+    { text: "10.53" },
+  ]}
+  explanation="The side-chain pKa is high (10.53), so this is a basic amino acid (probably lysine). For a basic AA, pI is the average of the two highest pKa values: (8.95 + 10.53) / 2 = 9.74."
+/>
+
+## Wrap-up
+
+You can now place the 20 AAs into 5 polarity buckets, compute pI by inspection, and predict migration behaviour at any pH. Next up: how these monomers assemble into the four levels of protein architecture.

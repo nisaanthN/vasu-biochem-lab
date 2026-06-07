@@ -1,0 +1,148 @@
+---
+unit: unit-4
+topicId: dna-rna-structure
+title: DNA and RNA structure
+blurb: Watson–Crick base pairing, antiparallel strands, mRNA / tRNA / rRNA. The central dogma in outline.
+estimatedMinutes: 14
+xp: 20
+learningObjectives:
+  - Draw a Watson–Crick base pair with correct hydrogen bonds
+  - Distinguish the three classes of RNA by function
+  - Trace a gene from DNA template to polypeptide
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 8"
+  - "Satyanarayana Biochemistry, 5e, Ch. 5"
+---
+
+## Why pharmacy cares about nucleic acid structure
+
+Half the drug classes in the pharmacopoeia hit a nucleic-acid target. Antibacterials (rifampicin → RNA polymerase, fluoroquinolones → topoisomerase), antivirals (acyclovir → viral DNA polymerase, AZT → reverse transcriptase), anticancers (cisplatin → DNA crosslinks, doxorubicin → topoisomerase II, methotrexate → folate / nucleotide synthesis) all rely on differences in nucleic-acid handling between human and pathogen — or between healthy and tumour cells. Understanding the substrate is non-negotiable.
+
+## The nucleotide — the monomer
+
+A nucleotide is three pieces:
+
+1. **Nitrogenous base** (purine or pyrimidine)
+2. **Pentose sugar** (ribose in RNA, 2'-deoxyribose in DNA)
+3. **Phosphate group** (one, two, or three)
+
+A **nucleoside** is just the base + sugar (no phosphate). Adenosine, guanosine, cytidine, uridine, thymidine.
+
+### The five bases
+
+- **Purines (2 rings)**: Adenine (A), Guanine (G).
+- **Pyrimidines (1 ring)**: Cytosine (C), Thymine (T, in DNA), Uracil (U, in RNA).
+
+<Mnemonic phrase="CUT the Py — Cytosine, Uracil, Thymine are the Pyrimidines">
+Three pyrimidines, two purines. T is DNA-only; U is RNA-only; C is in both. The "extra" methyl group of thymine (vs uracil) is what lets the DNA repair machinery detect cytosine deamination — a critical mutation-prevention mechanism.
+</Mnemonic>
+
+## Watson–Crick base pairing
+
+The base-pairing rules (the absolute foundation of molecular biology):
+
+- **A pairs with T (in DNA) or U (in RNA)** via **two** hydrogen bonds.
+- **G pairs with C** via **three** hydrogen bonds.
+
+GC-rich regions are therefore more thermally stable — they take more heat to denature. PCR primer design routinely targets GC content of 40–60%.
+
+```
+A — T (or U)              G — C
+  ‖                          ≡
+2 H-bonds                  3 H-bonds
+```
+
+Chargaff's rules (a 1950s observation that helped Watson and Crick solve the structure): in any DNA sample, %A = %T and %G = %C.
+
+## The DNA double helix
+
+Watson–Crick's 1953 model, refined since:
+
+- Two antiparallel strands wound into a right-handed helix.
+- **One strand runs 5'→3'; the other 3'→5'**. The 5' carbon carries the phosphate; the 3' carbon carries the free hydroxyl that the next nucleotide attaches to.
+- The **sugar-phosphate backbone is on the outside**; the bases are stacked on the inside.
+- Stacking interactions (π–π and van der Waals) between the planar bases contribute as much stability as the hydrogen bonds.
+- Major groove and minor groove — proteins read sequence through the major groove primarily.
+
+The B-form helix (the common one in cells): 10.5 base pairs per turn, 3.4 Å rise per bp, 20 Å wide.
+
+<Callout variant="info" title="Why drugs love the minor groove">
+Many DNA-binding drugs (netropsin, distamycin, pentamidine) prefer the minor groove because it's narrower and more selective. Major-groove binders (some transcription factors and intercalators like doxorubicin) tend to be larger.
+</Callout>
+
+## RNA — single-stranded, but folded
+
+RNA differs from DNA in three ways:
+
+1. **Sugar**: ribose (2'-OH) instead of 2'-deoxyribose. The 2'-OH makes RNA more chemically reactive (and gives RNAses their nucleophilic attack mechanism).
+2. **Base**: uracil replaces thymine.
+3. **Strands**: usually single-stranded, but folds into complex secondary structures via intramolecular base-pairing.
+
+### The three main classes
+
+| Class | Role | % of cellular RNA | Size |
+| :--- | :--- | :--- | :--- |
+| **mRNA** (messenger) | Carries coding info from DNA to ribosome | ~5% | Variable |
+| **tRNA** (transfer) | Brings amino acids to ribosome; reads codons | ~15% | ~76 nt |
+| **rRNA** (ribosomal) | Structural and catalytic part of the ribosome itself | ~80% | 16S, 23S, 5S in prokaryotes |
+
+### Other RNAs you may meet
+
+- **snRNA** — small nuclear RNA, makes up the spliceosome (splices introns out of pre-mRNA).
+- **miRNA** — micro-RNA, post-transcriptional gene silencing.
+- **siRNA** — small interfering RNA, basis of RNAi-based drugs (patisiran, givosiran).
+- **lncRNA** — long non-coding, regulatory.
+
+## tRNA — the adaptor molecule
+
+tRNA is the physical link between nucleic acid and protein. Each tRNA carries (a) an **anticodon** that pairs with mRNA, and (b) the corresponding **amino acid** covalently attached to its 3' end.
+
+The tRNA is **charged** by an aminoacyl-tRNA synthetase — one per amino acid, each ATP-dependent. The synthetase's specificity is what makes the genetic code accurate.
+
+The cloverleaf secondary structure of tRNA folds into an L-shaped tertiary structure with the anticodon at one end and the amino acid at the other.
+
+## The genetic code
+
+- **64 codons** (4³) decode 20 amino acids + 3 stop codons.
+- The code is **degenerate** (most amino acids have multiple codons) but **not ambiguous** (each codon encodes only one amino acid).
+- **Start codon**: AUG (also codes for methionine internally).
+- **Stop codons**: UAA, UAG, UGA.
+- **Wobble**: the third base of the codon is often flexible — one tRNA can read several codons differing in the 3rd position.
+
+## The central dogma in outline
+
+```
+DNA  ──transcription──►  mRNA  ──translation──►  Protein
+ ▲
+ │
+ └──replication──┘
+```
+
+Plus the discovered exceptions: **reverse transcription** (RNA → DNA, the retrovirus / HIV / AZT story) and **RNA replication** (in some viruses).
+
+### Replication, transcription, translation in one paragraph each
+
+**Replication**: DNA → DNA. Semi-conservative (each daughter molecule has one parent strand and one new strand). Driven by DNA polymerase, primed by an RNA primer made by primase, with helicase unwinding and topoisomerase relieving torsion. Quinolones inhibit bacterial topoisomerase II (DNA gyrase).
+
+**Transcription**: DNA → RNA. RNA polymerase reads the template strand 3'→5' and synthesises mRNA 5'→3'. Rifampicin inhibits bacterial RNA polymerase by binding the channel where the nascent RNA exits.
+
+**Translation**: mRNA → protein at the ribosome. Initiation (small subunit + mRNA + initiator tRNA + large subunit), elongation (codon-by-codon), termination (release factor at stop codon). Many antibiotics target the bacterial ribosome at specific steps — macrolides (large subunit, exit channel), aminoglycosides (small subunit, decoding), tetracyclines (small subunit, A-site).
+
+<Callout variant="success" title="See it in action">
+The DNA Transcription & Translation Animator lets you type any DNA template strand and step through the central dogma — watch the mRNA being read codon-by-codon, with the corresponding amino acid added to the growing peptide.
+</Callout>
+
+<InlineCheckpoint
+  question="A DNA template strand reads 3-prime-TACGGTACA-5-prime. The corresponding mRNA reads:"
+  options={[
+    { text: "5-prime-AUGCCAUGU-3-prime", correct: true },
+    { text: "5-prime-AUGGGTACA-3-prime" },
+    { text: "5-prime-TACGGTACA-3-prime" },
+    { text: "5-prime-UACGGUACA-3-prime" },
+  ]}
+  explanation="mRNA is complementary and antiparallel to the template, with U replacing T. Template 3-prime-TACGGTACA-5-prime becomes mRNA 5-prime-AUGCCAUGU-3-prime (A pairs U/T, G pairs C, direction flipped)."
+/>
+
+## Wrap-up
+
+You can now read a base pair, distinguish the three RNAs, and trace any gene through the dogma. Next: how the cell converts the chemical bond energy of glucose into the universal energy currency, ATP — the bioenergetics and ETC note.

@@ -1,0 +1,128 @@
+---
+unit: unit-1
+topicId: lipid-classification
+title: Lipid classification and properties
+blurb: Simple, compound, and derived lipids. Fatty acid nomenclature, saponification number, iodine number.
+estimatedMinutes: 14
+xp: 20
+learningObjectives:
+  - Identify simple vs compound vs derived lipids
+  - Compute iodine and saponification numbers given inputs
+  - Explain why phospholipids form bilayers
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 10"
+  - "Satyanarayana Biochemistry, 5e, Ch. 3"
+---
+
+## What unifies lipids
+
+Lipids are a chemically heterogeneous family defined by a **solubility behaviour**, not a single functional group: they dissolve in organic solvents (chloroform, ether, benzene) and resist water. That's why we extract them from plant matter with hexane and why drug formulations use lipid bases (oleaginous, cocoa butter, beeswax) for hydrophobic actives.
+
+For pharmacy specifically: lipids run the cell membrane, deliver fat-soluble vitamins (A, D, E, K), are the matrix for liposomal drug delivery, and form the backbone of corticosteroids, sex hormones, and bile salts.
+
+## Bloor's classification
+
+Indian pharmacy syllabi use **Bloor's classification (1920)**, which divides lipids into three buckets based on hydrolysis products.
+
+### 1. Simple lipids
+
+Esters of fatty acids with an alcohol. Two sub-classes:
+
+- **Fats and oils (triglycerides)** — esters with glycerol. Solid at room temp = fat; liquid = oil. The distinction is just melting point and reflects fatty-acid saturation.
+- **Waxes** — esters with a higher monohydric alcohol (cetyl alcohol, myricyl alcohol). Carnauba wax, beeswax, lanolin. Used in lip balms, ointments, and tablet coatings.
+
+### 2. Compound lipids (conjugated lipids)
+
+Simple lipids + an extra non-lipid group. Where pharmacology gets interesting:
+
+| Sub-class | Extra group | Example | Pharmacy relevance |
+| :--- | :--- | :--- | :--- |
+| Phospholipids | Phosphate + N-base | Phosphatidylcholine (lecithin) | Liposomes, lung surfactant |
+| Glycolipids | Carbohydrate | Cerebroside, ganglioside | Nerve membranes, blood-group antigens |
+| Lipoproteins | Protein | HDL, LDL, VLDL, chylomicrons | Cholesterol transport, statin pharmacology |
+| Sulpholipids | Sulphate | Sulphatide | Myelin sheath |
+
+### 3. Derived lipids
+
+The hydrolysis products of the above, or compounds that share lipid solubility:
+
+- **Fatty acids** (saturated, unsaturated)
+- **Sterols** — cholesterol, ergosterol (target of azole antifungals), bile acids
+- **Steroid hormones** — corticosteroids, oestrogens, androgens
+- **Fat-soluble vitamins** — A, D, E, K
+- **Eicosanoids** — prostaglandins, thromboxanes, leukotrienes (NSAID targets)
+- **Terpenoids and carotenoids**
+
+<Mnemonic phrase="The vitamins that need fat: A, D, E, K">
+Easy to remember and clinically critical. Patients on long-term orlistat or with cholestatic disease can develop deficiencies of all four. Vitamin K deficiency in particular shows up as bleeding because clotting factors II, VII, IX, X all require it for γ-carboxylation.
+</Mnemonic>
+
+## Fatty acid nomenclature
+
+A fatty acid is a long-chain carboxylic acid. Notation is `Cn:d`, where *n* is the carbon count and *d* is the number of double bonds.
+
+| Common name | Notation | Source | Notable |
+| :--- | :--- | :--- | :--- |
+| Palmitic | C16:0 | Palm oil | Most common saturated fat |
+| Stearic | C18:0 | Animal fats | Tablet lubricant (as Mg stearate) |
+| Oleic | C18:1 (ω-9) | Olive oil | The "Mediterranean diet" monounsaturate |
+| Linoleic | C18:2 (ω-6) | Sunflower, corn | Essential fatty acid |
+| α-Linolenic | C18:3 (ω-3) | Flaxseed | Essential fatty acid |
+| Arachidonic | C20:4 (ω-6) | Membrane phospholipids | Eicosanoid precursor — the COX/LOX substrate |
+| EPA | C20:5 (ω-3) | Fish oil | Cardioprotective |
+| DHA | C22:6 (ω-3) | Fish oil | Brain development |
+
+<Callout variant="info" title="ω (omega) numbering vs Δ numbering">
+ω (omega) counts from the methyl end. **Δ** counts from the carboxyl end. The same double bond is "ω-6" or "Δ12" in linoleic acid, depending on where you start. Pharmacy questions usually use ω notation because it groups the *essential* families (ω-3 vs ω-6).
+</Callout>
+
+## Two analytical numbers you must know
+
+### Iodine number
+
+Definition: the **grams of iodine that 100 g of fat will absorb**. Iodine adds across C=C double bonds, so a higher iodine number means more unsaturation.
+
+| Fat | Iodine number |
+| :--- | :--- |
+| Butter (saturated) | 25–40 |
+| Olive oil | 80–88 |
+| Linseed oil (very unsaturated) | 170–200 |
+
+Used in the pharmacopoeia to confirm the identity of fixed oils and detect adulteration.
+
+### Saponification number
+
+Definition: the **mg of KOH required to saponify 1 g of fat**. Saponification is the alkaline hydrolysis of the ester bonds to release glycerol and the fatty-acid salt (soap).
+
+Higher saponification number ⇒ shorter fatty-acid chains (more ester groups per gram).
+
+| Fat | Saponification number |
+| :--- | :--- |
+| Coconut oil (short chains) | 250–264 |
+| Olive oil | 187–196 |
+| Beeswax (long chains, large molecules) | 90–95 |
+
+<Callout variant="success" title="Try the saponification calculator">
+The Saponification & Iodine Number experiment lets you input chain length and unsaturation and see both numbers compute live — useful for quickly internalising the inverse relationship between chain length and SN.
+</Callout>
+
+## Why phospholipids form bilayers
+
+A phospholipid has a **polar head** (phosphate + choline / ethanolamine / serine / inositol) and **two non-polar tails** (fatty acid chains). In water, the tails repel water and pack against each other while the heads orient toward water — a thermodynamically favoured bilayer with hydrophilic surfaces and a hydrophobic interior.
+
+This same self-assembly is what lets us **manufacture liposomes** for drug delivery: hydrate dry phospholipid film with an aqueous drug solution, and bilayer vesicles form around the drug spontaneously. Amphotericin-B liposomal formulations exploit exactly this.
+
+<InlineCheckpoint
+  question="A fat sample has an iodine number of 12 and a saponification number of 260. Most likely it is:"
+  options={[
+    { text: "Linseed oil (highly unsaturated, long chain)" },
+    { text: "Coconut oil (saturated, short chain)", correct: true },
+    { text: "Olive oil (monounsaturated, medium chain)" },
+    { text: "Beeswax (saturated, very long chain)" },
+  ]}
+  explanation="Iodine number 12 means very few double bonds — saturated. Saponification number 260 means short fatty-acid chains. Coconut oil (rich in C8–C14 saturated chains) fits both."
+/>
+
+## Wrap-up
+
+You now have a working classification scheme, fatty-acid naming, and the two diagnostic numbers used in the pharmacopoeia. The next big unit shifts from carbon-energy storage to the polymers of biological information: amino acids and proteins.

@@ -1,0 +1,160 @@
+---
+unit: unit-5
+topicId: tca-cycle
+title: TCA cycle and metabolic disorders
+blurb: Krebs cycle — 8 steps, energy yield, regulation. Plus PKU, diabetes, gout.
+estimatedMinutes: 16
+xp: 25
+learningObjectives:
+  - Order the 8 enzymes of the TCA cycle
+  - Compute total ATP yield per acetyl-CoA entering the cycle
+  - Link three classical metabolic disorders to their biochemical defect
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 16, 18"
+  - "Satyanarayana Biochemistry, 5e, Ch. 10"
+---
+
+## What the TCA cycle does
+
+After glycolysis, pyruvate enters the mitochondrion and is decarboxylated to **acetyl-CoA** by pyruvate dehydrogenase (PDH). The TCA cycle (also known as the citric acid cycle or Krebs cycle) **completely oxidises the 2-carbon acetyl group** to two CO₂, harvesting the bond energy as NADH, FADH₂, and one GTP per turn.
+
+It's *the* metabolic hub: amino acids, fatty acids, and ketone bodies all feed in; biosynthesis of amino acids, haem, and gluconeogenesis branch off.
+
+## The PDH gateway
+
+Pyruvate (3C, cytosolic) → Acetyl-CoA (2C, mitochondrial) + CO₂ + NADH.
+
+PDH is a giant multi-enzyme complex with three components and five cofactors:
+
+- E1 (pyruvate dehydrogenase) — uses TPP (vitamin B1).
+- E2 (dihydrolipoyl transacetylase) — uses lipoic acid and CoA.
+- E3 (dihydrolipoyl dehydrogenase) — uses FAD and NAD⁺.
+
+**Vitamin connection**: PDH needs **B1, B2, B3, B5, and lipoic acid**. B1 (thiamine) deficiency hits PDH first — explains the neurologic features of beriberi and Wernicke encephalopathy (in chronic alcoholism — alcohol disrupts thiamine absorption and storage).
+
+PDH is inhibited by its products (NADH, acetyl-CoA) and is also covalently regulated by phosphorylation. Insulin activates the phosphatase that dephosphorylates and turns PDH on; glucagon does the opposite.
+
+## The 8 steps
+
+```
+        Acetyl-CoA (2C)  +  Oxaloacetate (4C)
+                 │ Citrate synthase
+                 ▼
+         Citrate (6C)  ─aconitase─►  Isocitrate (6C)
+                                          │ Isocitrate DH  → CO₂ + NADH
+                                          ▼
+                                   α-Ketoglutarate (5C)
+                                          │ α-KG DH complex → CO₂ + NADH
+                                          ▼
+                                   Succinyl-CoA (4C)
+                                          │ Succinyl-CoA synthetase → GTP
+                                          ▼
+                                    Succinate (4C)
+                                          │ Succinate DH → FADH₂  (= Complex II of ETC)
+                                          ▼
+                                     Fumarate (4C)
+                                          │ Fumarase + H₂O
+                                          ▼
+                                      Malate (4C)
+                                          │ Malate DH → NADH
+                                          ▼
+                                   Oxaloacetate (4C)  ◄── back to top
+```
+
+### One-line per enzyme
+
+1. **Citrate synthase** — condensation. Inhibited by citrate, ATP, NADH, succinyl-CoA.
+2. **Aconitase** — isomerisation (citrate → isocitrate via cis-aconitate).
+3. **Isocitrate dehydrogenase** — oxidative decarboxylation. **Rate-limiting step**. Activated by ADP, Ca²⁺. Inhibited by ATP, NADH.
+4. **α-Ketoglutarate dehydrogenase** — oxidative decarboxylation. Same five-cofactor mechanism as PDH (B1, B2, B3, B5, lipoic acid).
+5. **Succinyl-CoA synthetase** — substrate-level phosphorylation → GTP (or ATP).
+6. **Succinate dehydrogenase** — the only TCA enzyme bound to the inner mitochondrial membrane (it's **Complex II** of the ETC). Produces FADH₂.
+7. **Fumarase** — hydration.
+8. **Malate dehydrogenase** — final oxidation to oxaloacetate.
+
+## Energy yield per acetyl-CoA
+
+| Step | Carrier produced | ATP equivalents |
+| :--- | :--- | :--- |
+| Isocitrate DH | 1 NADH | 2.5 |
+| α-KG DH | 1 NADH | 2.5 |
+| Succinyl-CoA synthetase | 1 GTP | 1 |
+| Succinate DH | 1 FADH₂ | 1.5 |
+| Malate DH | 1 NADH | 2.5 |
+| **Total** | | **10 ATP** |
+
+Per glucose, **two turns of the TCA cycle**, so **20 ATP** from TCA alone (plus ~5 from PDH × 2, plus ~7 from glycolysis = ~32 total).
+
+## Three regulatory enzymes
+
+PDH, isocitrate dehydrogenase, and α-KG dehydrogenase — all inhibited by their NADH/ATP products and activated by their ADP/AMP/Ca²⁺ substrates. The cycle accelerates when energy demand is high and brakes when ATP is plentiful.
+
+<Callout variant="info" title="Why Ca²⁺ activates the TCA cycle">
+Muscle contraction releases Ca²⁺ into the cytosol — and some into the mitochondrial matrix. Ca²⁺ activates PDH phosphatase (turning PDH on), and also directly stimulates isocitrate DH and α-KG DH. The contracting muscle simultaneously signals "make more ATP" and "demand more ATP". Elegant coupling.
+</Callout>
+
+## Anaplerotic reactions — refilling the cycle
+
+If TCA intermediates are drained off for biosynthesis (e.g., α-ketoglutarate to glutamate, succinyl-CoA to haem, oxaloacetate to aspartate), the cycle can't keep turning. **Anaplerotic** reactions refill them:
+
+- **Pyruvate carboxylase**: pyruvate + CO₂ + ATP → oxaloacetate. Activated by acetyl-CoA. Major anaplerotic source in liver and a key gluconeogenic entry.
+- **Glutamate dehydrogenase**: glutamate → α-KG (during amino acid catabolism).
+- **Methylmalonyl-CoA mutase**: feeds odd-chain fatty acid β-oxidation products into succinyl-CoA (B12-dependent).
+
+## Metabolic disorders worth knowing
+
+### Diabetes mellitus
+
+Type 1: autoimmune destruction of β-cells → no insulin.
+Type 2: peripheral insulin resistance + relative insulin deficiency.
+
+The biochemistry that matters:
+
+- Without insulin, GLUT4 doesn't translocate to membrane; muscle and adipose can't take up glucose → **hyperglycemia**.
+- Liver runs gluconeogenesis flat-out → makes hyperglycemia worse.
+- Adipose lipolysis is uncontrolled → free fatty acids → liver makes ketone bodies → **diabetic ketoacidosis** (DKA) in T1.
+- Chronic hyperglycemia → non-enzymatic glycation of proteins → HbA1c (the diagnostic marker), basement-membrane thickening (microvascular complications), advanced glycation end-products (AGEs).
+
+Drug classes target each of these mechanisms: metformin (suppresses hepatic gluconeogenesis), sulfonylureas (insulin secretion), GLP-1 agonists (insulin secretion + central appetite suppression), SGLT2 inhibitors (renal glucose excretion).
+
+### Phenylketonuria (PKU)
+
+Autosomal recessive deficiency of **phenylalanine hydroxylase** — the enzyme that converts phenylalanine to tyrosine. Phenylalanine builds up; it's transaminated to phenylpyruvate (the "ketone" the name refers to).
+
+- **Untreated**: severe intellectual disability, seizures, light skin and hair pigmentation (tyrosine is melanin precursor).
+- **Treatment**: lifelong low-phenylalanine diet, tyrosine supplementation. Sapropterin (BH4 analogue) for some forms.
+- **Screening**: heel-prick Guthrie test at 48-72 hours of life.
+
+Aspartame is hydrolysed to aspartate + phenylalanine + methanol — hence "PHENYLKETONURICS: contains phenylalanine" labels on diet sodas.
+
+### Gout
+
+Hyperuricemia → monosodium urate crystal deposition in joints (acutely painful arthritis) and tissues (tophi).
+
+The biochemistry:
+
+- **Purines** (A, G) are catabolised through hypoxanthine → xanthine → **uric acid** by **xanthine oxidase**.
+- Excessive nucleic acid breakdown (tumor lysis syndrome), high-purine diet (red meat, seafood), or impaired renal excretion → urate accumulation.
+- **Lesch-Nyhan syndrome**: HGPRT deficiency → can't salvage purines → degraded to urate → severe juvenile gout + neurologic features.
+
+Drug classes:
+
+- **Allopurinol, febuxostat**: xanthine oxidase inhibitors (decrease production).
+- **Probenecid**: uricosuric (increase renal excretion).
+- **Colchicine, NSAIDs**: anti-inflammatory for acute attacks.
+- **Pegloticase**: recombinant uricase for refractory disease (humans lack uricase, which is why we get gout when other mammals don't).
+
+<InlineCheckpoint
+  question="Which TCA cycle enzyme is also a complex of the electron transport chain?"
+  options={[
+    { text: "Citrate synthase" },
+    { text: "Isocitrate dehydrogenase" },
+    { text: "Succinate dehydrogenase", correct: true },
+    { text: "Malate dehydrogenase" },
+  ]}
+  explanation="Succinate dehydrogenase (TCA step 6) is the only TCA enzyme physically embedded in the inner mitochondrial membrane — it is Complex II of the ETC. It oxidises succinate to fumarate and reduces FAD to FADH₂, feeding electrons directly into ubiquinone."
+/>
+
+## Wrap-up
+
+You can now sequence the 8 enzymes, compute energy yield, name the regulatory points, and link three pharmacy-essential disorders to their biochemical lesion. That closes out the v1 note library.

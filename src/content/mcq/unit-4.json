@@ -1,0 +1,167 @@
+[
+  {
+    "id": "u4-q01",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which base pair has three hydrogen bonds?",
+    "options": ["A-T", "A-U", "G-C", "T-U"],
+    "correctIndex": 2,
+    "explanation": "G-C pairs have 3 hydrogen bonds; A-T (DNA) and A-U (RNA) have 2. GC-rich DNA is therefore more thermally stable — PCR primers are often designed with 40-60% GC content."
+  },
+  {
+    "id": "u4-q02",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The pentose sugar in DNA differs from that in RNA in:",
+    "options": ["Having an extra phosphate", "Lacking the 2'-OH group", "Being an aldose vs ketose", "Having a different stereochemistry"],
+    "correctIndex": 1,
+    "explanation": "DNA uses 2'-deoxyribose (H at C2'), RNA uses ribose (OH at C2'). The 2'-OH makes RNA more chemically reactive — it's the basis of alkaline RNA hydrolysis and the catalytic activity of some ribozymes."
+  },
+  {
+    "id": "u4-q03",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which RNA carries amino acids to the ribosome?",
+    "options": ["mRNA", "tRNA", "rRNA", "snRNA"],
+    "correctIndex": 1,
+    "explanation": "tRNA (transfer RNA) is the adaptor: it carries a specific amino acid attached to its 3' end and reads mRNA codons via its anticodon. Each amino acid is charged onto its tRNA by an aminoacyl-tRNA synthetase using ATP."
+  },
+  {
+    "id": "u4-q04",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The two DNA strands in the Watson-Crick double helix run:",
+    "options": ["Parallel (both 5'→3' in the same direction)", "Antiparallel (5'→3' and 3'→5' in opposite directions)", "Perpendicular", "In random orientation"],
+    "correctIndex": 1,
+    "explanation": "DNA strands are antiparallel — one runs 5'→3' while the complementary strand runs 3'→5'. This is structurally necessary for proper Watson-Crick base pairing geometry."
+  },
+  {
+    "id": "u4-q05",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "If a DNA template reads 3'-TACGGT-5', the resulting mRNA reads:",
+    "options": ["5'-AUGCCA-3'", "5'-AUGGGU-3'", "5'-TACGGT-3'", "5'-UACGGU-3'"],
+    "correctIndex": 0,
+    "explanation": "mRNA is complementary and antiparallel to the template, with U replacing T. Reading 3'→5' on template gives A-U, T-A, C-G, G-C, G-C, T-A → 5'-AUGCCA-3'. Note that AUG = start codon."
+  },
+  {
+    "id": "u4-q06",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "The genetic code is described as 'degenerate' because:",
+    "options": ["Each codon codes for multiple amino acids", "Most amino acids are encoded by multiple codons", "Stop codons are ambiguous", "The code is universal across all species"],
+    "correctIndex": 1,
+    "explanation": "Degeneracy means 64 codons code for only 20 amino acids — most AAs have 2-6 codons. The code is NOT ambiguous (each codon codes for only one AA). This redundancy reduces the impact of point mutations."
+  },
+  {
+    "id": "u4-q07",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "The start codon in mRNA is:",
+    "options": ["AUG (Methionine)", "UAA (Stop)", "AUA (Isoleucine)", "GUG (Valine)"],
+    "correctIndex": 0,
+    "explanation": "AUG codes for methionine and serves as the start codon. In bacteria, the first methionine is formylated (fMet). Internal AUG codons just code for Met without initiating translation."
+  },
+  {
+    "id": "u4-q08",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "question": "Rifampicin treats tuberculosis by inhibiting:",
+    "options": ["Bacterial DNA gyrase", "Bacterial RNA polymerase", "30S ribosomal subunit", "Cell wall synthesis"],
+    "correctIndex": 1,
+    "explanation": "Rifampicin binds the β-subunit of bacterial RNA polymerase, blocking the exit channel for nascent mRNA. Bacterial RNA pol differs enough from eukaryotic RNA pol II to give selectivity — a major TB and meningitis prophylaxis drug."
+  },
+  {
+    "id": "u4-q09",
+    "unitId": "unit-4",
+    "subTopicId": "dna-rna-structure",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "Quinolones (ciprofloxacin) target which bacterial enzyme?",
+    "options": ["DNA polymerase III", "DNA gyrase (topoisomerase II)", "RNA polymerase", "Aminoacyl-tRNA synthetase"],
+    "correctIndex": 1,
+    "explanation": "Fluoroquinolones inhibit bacterial DNA gyrase (gram-negative) and topoisomerase IV (gram-positive). These enzymes manage DNA supercoiling during replication — inhibiting them halts bacterial DNA replication."
+  },
+  {
+    "id": "u4-q10",
+    "unitId": "unit-4",
+    "subTopicId": "etc-oxphos",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Which complex of the electron transport chain does NOT pump protons?",
+    "options": ["Complex I", "Complex II", "Complex III", "Complex IV"],
+    "correctIndex": 1,
+    "explanation": "Complex II (succinate dehydrogenase) transfers electrons from FADH₂ to ubiquinone but doesn't pump protons. This is why FADH₂ yields fewer ATP (~1.5) than NADH (~2.5) — its electrons skip one pumping complex."
+  },
+  {
+    "id": "u4-q11",
+    "unitId": "unit-4",
+    "subTopicId": "etc-oxphos",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "The final electron acceptor in the ETC is:",
+    "options": ["NAD⁺", "Cytochrome c", "Ubiquinone", "O₂"],
+    "correctIndex": 3,
+    "explanation": "Molecular oxygen accepts the electrons at Complex IV (cytochrome c oxidase), being reduced to H₂O. This is why mitochondrial respiration requires O₂; without it, the ETC stops and ATP collapses."
+  },
+  {
+    "id": "u4-q12",
+    "unitId": "unit-4",
+    "subTopicId": "etc-oxphos",
+    "difficulty": "medium",
+    "bloom": "recall",
+    "question": "ATP synthase is also known as:",
+    "options": ["Complex I", "Complex IV", "Complex V (F₀F₁ ATPase)", "Mitochondrial ATPase"],
+    "correctIndex": 2,
+    "explanation": "ATP synthase = Complex V = F₀F₁ ATPase. F₀ is the membrane-embedded proton channel that rotates; F₁ is the catalytic head in the matrix that synthesises ATP via the binding change mechanism (Boyer)."
+  },
+  {
+    "id": "u4-q13",
+    "unitId": "unit-4",
+    "subTopicId": "etc-oxphos",
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "question": "2,4-Dinitrophenol (DNP) was historically a 'weight loss drug'. Its mechanism:",
+    "options": ["Inhibits Complex I", "Acts as a protonophore — collapses the proton gradient without making ATP", "Inhibits ATP synthase", "Inhibits the TCA cycle"],
+    "correctIndex": 1,
+    "explanation": "DNP is a lipophilic weak acid that ferries H⁺ back across the inner mitochondrial membrane, bypassing ATP synthase. ETC runs maximally, O₂ is consumed, but energy is dissipated as heat instead of stored as ATP. Fatal hyperthermia killed people in the 1930s."
+  },
+  {
+    "id": "u4-q14",
+    "unitId": "unit-4",
+    "subTopicId": "etc-oxphos",
+    "difficulty": "medium",
+    "bloom": "apply",
+    "question": "Using P/O ratios of 2.5 (NADH) and 1.5 (FADH₂), one turn of the TCA cycle yields approximately how many ATP equivalents?",
+    "options": ["5 ATP", "10 ATP", "15 ATP", "20 ATP"],
+    "correctIndex": 1,
+    "explanation": "One turn of TCA produces 3 NADH (= 7.5 ATP), 1 FADH₂ (= 1.5 ATP), and 1 GTP (= 1 ATP) = 10 ATP equivalents per acetyl-CoA. Per glucose (2 acetyl-CoA from glycolysis), TCA contributes 20 ATP."
+  },
+  {
+    "id": "u4-q15",
+    "unitId": "unit-4",
+    "subTopicId": "etc-oxphos",
+    "difficulty": "easy",
+    "bloom": "recall",
+    "question": "Peter Mitchell's chemiosmotic hypothesis states that:",
+    "options": ["ATP is made by substrate-level phosphorylation in mitochondria", "A proton gradient across the inner membrane drives ATP synthesis", "Electrons directly phosphorylate ADP", "Mitochondria are derived from prokaryotes"],
+    "correctIndex": 1,
+    "explanation": "Mitchell's 1961 hypothesis (Nobel 1978): electron transport pumps H⁺ across the inner membrane, building a proton motive force (pH and membrane potential). Protons flow back through ATP synthase, mechanically driving ATP production."
+  }
+]

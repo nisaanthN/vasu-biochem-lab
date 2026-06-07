@@ -1,0 +1,189 @@
+---
+unit: unit-3
+topicId: michaelis-menten
+title: Michaelis–Menten kinetics & inhibition
+blurb: Vmax, Km, the rectangular hyperbola, Lineweaver–Burk linearization. Competitive, non-competitive, uncompetitive inhibition.
+estimatedMinutes: 18
+xp: 25
+learningObjectives:
+  - Interpret v vs [S] and 1/v vs 1/[S] plots quantitatively
+  - Distinguish the three inhibition modes from their kinetic signatures
+  - Calculate apparent Km and Vmax given inhibitor data
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 6"
+  - "Satyanarayana Biochemistry, 5e, Ch. 7"
+---
+
+## The Michaelis–Menten model
+
+The single most testable topic in BP203T. Two pharmacologists, Leonor Michaelis and Maud Menten, modelled enzyme kinetics in 1913. Their model assumes:
+
+1. The enzyme **E** and substrate **S** form a transient **ES complex**.
+2. ES breaks down to **E + P** (product), with rate constant `k_cat`.
+3. The reverse step (P → ES) is negligible (initial-rate conditions).
+4. **[ES] is in steady state** (its rate of formation equals its rate of breakdown).
+
+This gives the classic equation:
+
+```
+       Vmax · [S]
+v  =  ────────────
+       Km + [S]
+```
+
+Where:
+
+- **Vmax** = maximum rate when every active site is filled (saturated with substrate).
+- **Km (Michaelis constant)** = the substrate concentration at which v = Vmax/2.
+
+## What Km and Vmax tell you
+
+<KeyPoint>
+**Km is an inverse measure of affinity.** Low Km = enzyme is half-saturated at low [S] = binds substrate tightly. High Km = needs lots of substrate = binds weakly.
+</KeyPoint>
+
+- Vmax depends on **enzyme concentration** (`Vmax = k_cat · [E]_total`) and the catalytic rate constant.
+- Km depends only on the **enzyme–substrate identity**, not on [E].
+- **k_cat / Km** is the *specificity constant* — the diffusion-limited upper bound is ~10⁸ M⁻¹ s⁻¹ (a "kinetically perfect" enzyme).
+
+### Numbers worth remembering
+
+| Enzyme | Km (mM) | k_cat (s⁻¹) | Notes |
+| :--- | :--- | :--- | :--- |
+| Hexokinase (glucose) | 0.1 | 1000 | Low Km — keeps phosphorylating even at low glucose |
+| Glucokinase (liver, glucose) | 10 | 100 | High Km — only active at high blood glucose, e.g., after a meal |
+| Catalase (H₂O₂) | 25 | 4 × 10⁷ | Kinetically near-perfect |
+| Acetylcholinesterase (ACh) | 0.09 | 1.4 × 10⁴ | Why neostigmine prolongs ACh action so effectively |
+
+The hexokinase / glucokinase comparison is a classic exam pair — same reaction, different Km, different physiological role.
+
+## The shape — a rectangular hyperbola
+
+At low [S], the relationship is roughly linear (`v ≈ Vmax · [S] / Km` when [S] ≪ Km).
+At high [S], v plateaus at Vmax (when [S] ≫ Km).
+
+Exactly at [S] = Km, v = Vmax / 2. That's how you read Km off the v vs [S] plot.
+
+## Lineweaver–Burk — the double reciprocal plot
+
+Take the reciprocal of both sides:
+
+```
+1     Km    1      1
+─  = ──── · ─  +  ────
+v    Vmax  [S]   Vmax
+```
+
+This is `y = mx + b` with:
+
+- **y-intercept** = 1 / Vmax
+- **x-intercept** = -1 / Km
+- **slope** = Km / Vmax
+
+So the LB plot turns the hyperbola into a straight line. The three inhibition modes change the slope or intercept in distinctive ways — which is exactly why we use it.
+
+<Callout variant="success" title="See it live">
+The Michaelis–Menten simulator lets you slide Km and Vmax and watch both plots update side-by-side. It's the fastest way to internalise how Km affects the curve shape without sliding Vmax.
+</Callout>
+
+## The three inhibition modes
+
+### Competitive inhibition
+
+- Inhibitor resembles substrate and binds the **active site**.
+- Adding more S out-competes the inhibitor.
+- **Vmax unchanged** (you can still reach it with enough S).
+- **Km appears larger** (you need more S to reach Vmax/2).
+
+LB plot: same y-intercept (1/Vmax), different x-intercept (more negative; smaller magnitude).
+
+**Example**: methotrexate competing with folate for dihydrofolate reductase. Statins competing with HMG-CoA for HMG-CoA reductase.
+
+### Non-competitive inhibition
+
+- Inhibitor binds an **allosteric site** (somewhere other than the active site), available whether substrate is bound or not.
+- Adding more S **cannot rescue** activity.
+- **Vmax decreases** (some enzyme is permanently locked out).
+- **Km unchanged** (the active site still works the same — there's just less of it).
+
+LB plot: same x-intercept (-1/Km), different y-intercept (higher; lower Vmax).
+
+**Example**: heavy metals binding -SH groups on cysteines distal to the active site. Some allosteric drugs.
+
+### Uncompetitive inhibition
+
+- Inhibitor binds **only the ES complex**, not free E.
+- Adding more S actually *helps* the inhibitor bind more (since there's more ES).
+- **Both Km and Vmax decrease** by the same factor.
+
+LB plot: parallel lines (same slope) shifted up.
+
+**Example**: lithium on inositol monophosphatase (relevant to bipolar pharmacology).
+
+### Summary table
+
+| Mode | Km | Vmax | LB intercepts |
+| :--- | :--- | :--- | :--- |
+| Competitive | ↑ | unchanged | Same y-int, more neg x-int |
+| Non-competitive | unchanged | ↓ | Same x-int, higher y-int |
+| Uncompetitive | ↓ | ↓ | Parallel lines (same slope) |
+
+<Mnemonic phrase="Competitive Catches the substrate site. Non-competitive Negates the enzyme. Uncompetitive only Unmasks itself when ES exists.">
+Three Cs and an exception. Each term cues which site the inhibitor binds — which then determines what happens to Km and Vmax.
+</Mnemonic>
+
+## Calculating apparent Km and Vmax
+
+For competitive inhibition with inhibitor concentration `[I]` and `Ki`:
+
+```
+Km_app = Km · (1 + [I] / Ki)
+Vmax_app = Vmax
+```
+
+For non-competitive:
+
+```
+Km_app = Km
+Vmax_app = Vmax / (1 + [I] / Ki)
+```
+
+For uncompetitive:
+
+```
+Km_app = Km / (1 + [I] / Ki)
+Vmax_app = Vmax / (1 + [I] / Ki)
+```
+
+<Callout variant="success" title="Try the inhibition explorer">
+The Enzyme Inhibition Explorer experiment overlays the inhibited curves on the baseline so you see exactly how each mode shifts the LB plot. Drag the inhibitor concentration and Ki to watch the apparent parameters update.
+</Callout>
+
+## Allosteric enzymes — when Michaelis-Menten breaks down
+
+Multi-subunit enzymes with cooperative binding don't follow MM kinetics. Their v vs [S] curve is **sigmoidal**, not hyperbolic. Examples: aspartate transcarbamoylase, phosphofructokinase-1, haemoglobin (binding O₂, not technically an enzyme but the canonical example).
+
+The Hill equation models cooperativity:
+
+```
+            [S]^n
+v  = Vmax · ─────────
+           K + [S]^n
+```
+
+where `n` is the Hill coefficient (n > 1 indicates positive cooperativity).
+
+<InlineCheckpoint
+  question="A Lineweaver-Burk plot shows that adding an inhibitor produces a line with the SAME y-intercept but a steeper slope. The inhibition mode is:"
+  options={[
+    { text: "Competitive", correct: true },
+    { text: "Non-competitive" },
+    { text: "Uncompetitive" },
+    { text: "Mixed" },
+  ]}
+  explanation="Same y-intercept = same Vmax. Steeper slope (with the same y-intercept) means the x-intercept (-1/Km) is closer to zero, i.e., apparent Km is larger. Higher Km, same Vmax = competitive inhibition."
+/>
+
+## Wrap-up
+
+You can now compute apparent kinetic parameters under inhibition, read inhibition mode off an LB plot, and explain why allosteric enzymes don't fit MM. The next unit moves from catalysis to information: nucleic acid structure and the central dogma.

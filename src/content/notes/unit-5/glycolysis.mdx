@@ -1,0 +1,139 @@
+---
+unit: unit-5
+topicId: glycolysis
+title: Glycolysis — the Embden-Meyerhof-Parnas pathway
+blurb: The 10 steps from glucose to pyruvate. Regulatory enzymes, net ATP yield, and clinical context.
+estimatedMinutes: 18
+xp: 25
+learningObjectives:
+  - Recall the 10 enzymes of glycolysis in order
+  - Identify the three irreversible regulatory steps
+  - Compute net ATP yield and balance for the pathway
+references:
+  - "Lehninger Principles of Biochemistry, 8e, Ch. 14"
+  - "Satyanarayana Biochemistry, 5e, Ch. 9"
+---
+
+## What glycolysis does
+
+Glycolysis converts one molecule of **glucose (6C)** into two molecules of **pyruvate (3C)** in the cytoplasm. It happens in every cell that uses glucose — aerobically or anaerobically — and is the only ATP source for red blood cells (no mitochondria) and the only major source for skeletal muscle during burst exercise. The net yield is modest: 2 ATP, 2 NADH per glucose.
+
+But the pathway matters far beyond the ATP. Its intermediates feed into the pentose phosphate pathway, gluconeogenesis (reverse), glycogen synthesis, and serine/glycine synthesis. Many anti-cancer and anti-parasitic targets sit in this pathway.
+
+## The 10 steps — two phases
+
+**Phase 1 — Energy investment (steps 1–5)**: spend 2 ATP to phosphorylate and prepare the sugar.
+**Phase 2 — Energy payoff (steps 6–10)**: produce 4 ATP and 2 NADH from the two triose pieces.
+
+### Step-by-step
+
+```
+1.  Glucose                  ──Hexokinase / Glucokinase──►  G6P            (uses ATP)  IRR
+2.  G6P                      ──Phosphohexose isomerase──►   F6P            (reversible)
+3.  F6P                      ──PFK-1──►                     F1,6BP         (uses ATP)  IRR
+4.  F1,6BP                   ──Aldolase──►                  DHAP + G3P     (reversible)
+5.  DHAP                     ──Triose-P isomerase──►        G3P            (reversible)
+6.  G3P                      ──G3P dehydrogenase──►         1,3-BPG        (makes NADH)
+7.  1,3-BPG                  ──Phosphoglycerate kinase──►   3PG            (makes ATP, SLP)
+8.  3PG                      ──Phosphoglycerate mutase──►   2PG            (reversible)
+9.  2PG                      ──Enolase──►                   PEP            (loses water)
+10. PEP                      ──Pyruvate kinase──►           Pyruvate       (makes ATP, SLP)  IRR
+```
+
+Three irreversible steps (1, 3, 10) — these are the **regulatory chokepoints**.
+
+<Mnemonic phrase="HK – PHI – PFK – Aldo – TPI – GAPDH – PGK – PGM – Enolase – PK">
+Or shorter: "Goodness Gracious, Father Franklin Did Go By Picking Pumpkins (to) Prepare Pies". The G's and P's loosely map to glucose, glucose-6-P, fructose-6-P, fructose-1,6-BP, dihydroxyacetone-P, glyceraldehyde-3-P, 1,3-BPG, 3-PG, 2-PG, PEP, pyruvate.
+</Mnemonic>
+
+## The three regulatory steps in detail
+
+### Step 1: Hexokinase / Glucokinase
+
+Glucose + ATP → Glucose-6-phosphate + ADP.
+
+- **Hexokinase** (all tissues): low Km (~0.1 mM), product-inhibited by G6P. Active even at low glucose, but saturates fast.
+- **Glucokinase / Hexokinase IV** (liver, pancreatic β-cells): high Km (~10 mM), not product-inhibited. Only kicks in when blood glucose rises after a meal.
+
+This Km difference is why hepatocytes "wait" to take up glucose until blood levels rise — letting other tissues feed first when glucose is scarce.
+
+### Step 3: Phosphofructokinase-1 (PFK-1) — the rate-limiting step
+
+F6P + ATP → F1,6BP + ADP.
+
+PFK-1 is the **most heavily regulated enzyme** in glycolysis:
+
+| Activator | Sensor of |
+| :--- | :--- |
+| AMP, ADP | Low energy charge — need ATP |
+| F2,6BP | Insulin (postprandial state — burn glucose) |
+| Pi | Energy depletion |
+
+| Inhibitor | Sensor of |
+| :--- | :--- |
+| ATP | High energy — don't make more |
+| Citrate | TCA already saturated |
+| H⁺ (low pH) | Lactic acid accumulating |
+
+F2,6BP is the most potent allosteric activator and is itself made by PFK-2 (a separate enzyme regulated by insulin/glucagon — the metabolic switch between fed and fasted state).
+
+### Step 10: Pyruvate kinase
+
+PEP + ADP → Pyruvate + ATP.
+
+- Activated by F1,6BP (feed-forward activation).
+- Inhibited by ATP, alanine (a deamination product of pyruvate — signals enough pyruvate around).
+- Liver isoform is also inactivated by glucagon-stimulated phosphorylation (fasted state — don't waste glucose).
+
+**Pyruvate kinase deficiency** is the second-most-common hereditary RBC enzymopathy (after G6PD deficiency) — causes haemolytic anaemia.
+
+## Substrate-level phosphorylation
+
+Glycolysis makes ATP without an electron-transport chain. Two SLP steps:
+
+- **Step 7** (PGK): 1,3-BPG transfers its high-energy phosphate to ADP.
+- **Step 10** (PK): PEP transfers its phosphate to ADP.
+
+Each generates 1 ATP per triose, so 2 per glucose. Combined with the 2 ATP investment at steps 1 and 3, **net = 2 ATP per glucose**.
+
+## NAD⁺ regeneration — the anaerobic problem
+
+Step 6 reduces NAD⁺ to NADH. NAD⁺ is a limited resource. If it's not regenerated, glycolysis stops. Two options:
+
+- **Aerobic** (with O₂): NADH is shuttled into mitochondria (via malate-aspartate or glycerol-3-phosphate shuttle), reoxidised by the ETC. Pyruvate goes on to acetyl-CoA and the TCA cycle.
+- **Anaerobic** (no O₂): pyruvate is reduced to **lactate** by lactate dehydrogenase, regenerating NAD⁺. This is how exercising muscle, RBCs, and the Cori cycle in liver work.
+
+<KeyPoint>
+Lactic acidosis isn't a sign that the muscle is making "bad" lactate — it's a sign that glycolysis is running flat-out without enough O₂ for the ETC. Lactate is the metabolic exhaust of fast-twitch metabolism.
+</KeyPoint>
+
+## Pharmacology and clinical correlations
+
+- **Arsenate (AsO₄³⁻)**: a phosphate analogue that uncouples step 7 — 1,3-BPG forms but the high-energy bond goes to arsenate instead of ATP. Net result: pathway still runs, but no ATP from glycolysis.
+- **Iodoacetate**: covalently inactivates GAPDH (step 6) by alkylating its active-site cysteine.
+- **Fluoride**: inhibits enolase (step 9) — relevant to fluoride additive in blood-glucose collection tubes (prevents glycolysis ex vivo and stabilises the glucose reading).
+- **2-Deoxyglucose**: an investigational antitumor agent. Phosphorylated to 2DG-6-P which can't proceed in glycolysis, depleting ATP in glycolysis-dependent tumor cells.
+
+## Galactose and fructose entry
+
+- **Galactose** → galactose-1-P → glucose-1-P → glucose-6-P (enters at step 2). Defects: **galactosemia** (galactose-1-P uridyltransferase deficiency).
+- **Fructose** → fructose-1-P → glyceraldehyde + DHAP (enters mid-pathway, bypassing PFK-1 regulation). This bypass is why excess fructose intake drives lipogenesis more readily than glucose — there's no PFK-1 brake.
+
+## The Cori cycle
+
+Skeletal muscle exports lactate to liver. Liver converts lactate back to glucose via **gluconeogenesis** (essentially reverse glycolysis with workarounds at the three irreversible steps). Glucose re-enters circulation and goes back to muscle. Net: muscle gets ATP; liver pays the metabolic cost (gluconeogenesis is ATP-expensive — 6 ATP equivalents per glucose).
+
+<InlineCheckpoint
+  question="Which enzyme is the rate-limiting step of glycolysis?"
+  options={[
+    { text: "Hexokinase" },
+    { text: "Phosphofructokinase-1", correct: true },
+    { text: "Pyruvate kinase" },
+    { text: "Aldolase" },
+  ]}
+  explanation="PFK-1 is the committed step (step 3) and the most heavily regulated. Hexokinase is the entry point but is product-inhibited by its own product G6P, so it auto-throttles before becoming rate-limiting. PFK-1 integrates ATP, AMP, citrate, and F2,6BP signals — the metabolic 'gas pedal'."
+/>
+
+## Wrap-up
+
+You can now sequence the 10 steps, name the regulatory enzymes, defend why PFK-1 is the rate-limiter, and account for net ATP. Next note: where pyruvate goes after glycolysis — the TCA cycle and the metabolic disorders it touches.
