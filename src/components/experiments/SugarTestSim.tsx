@@ -107,16 +107,16 @@ export function SugarTestSim() {
         )
       }
     >
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="grid gap-5 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Setup</CardTitle>
+            <CardTitle className="text-lg">Setup</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-5">
             <div>
-              <label className="mb-1 block text-sm">Sugar in test tube</label>
+              <label className="mb-2 block text-[15px] font-medium">Sugar in test tube</label>
               <Select value={sugar} onValueChange={(v) => { setSugar(v as Sugar); setRevealed(false); }}>
-                <SelectTrigger>
+                <SelectTrigger className="h-11 text-[15px]">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -127,9 +127,9 @@ export function SugarTestSim() {
               </Select>
             </div>
             <div>
-              <label className="mb-1 block text-sm">Reagent</label>
+              <label className="mb-2 block text-[15px] font-medium">Reagent</label>
               <Select value={reagent} onValueChange={(v) => { setReagent(v as Reagent); setRevealed(false); }}>
-                <SelectTrigger>
+                <SelectTrigger className="h-11 text-[15px]">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -140,18 +140,18 @@ export function SugarTestSim() {
               </Select>
             </div>
             <div className="flex gap-2 pt-2">
-              <Button onClick={runTest} disabled={revealed}>Run test</Button>
-              <Button onClick={reset} variant="ghost" disabled={!revealed}>Reset</Button>
+              <Button onClick={runTest} disabled={revealed} size="lg">Run test</Button>
+              <Button onClick={reset} variant="ghost" disabled={!revealed} size="lg">Reset</Button>
             </div>
           </CardContent>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle className="text-base">Result</CardTitle>
+            <CardTitle className="text-lg">Result</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid place-items-center py-6">
-              <TestTube color={revealed ? outcome.color : "#94a3b8"} label={revealed ? outcome.result : "Awaiting reagent..."} />
+            <div className="grid place-items-center py-8">
+              <TestTube color={revealed ? outcome.color : "var(--color-muted-foreground)"} label={revealed ? outcome.result : "Awaiting reagent..."} />
             </div>
           </CardContent>
         </Card>
@@ -162,24 +162,24 @@ export function SugarTestSim() {
 
 function TestTube({ color, label }: { color: string; label: string }) {
   return (
-    <div className="flex flex-col items-center gap-3">
-      <svg width="80" height="220" viewBox="0 0 80 220" className="drop-shadow-sm">
+    <div className="flex flex-col items-center gap-4">
+      <svg width="120" height="320" viewBox="0 0 80 220" className="drop-shadow-md">
         <defs>
           <linearGradient id="tubeGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="rgba(255,255,255,0.5)" />
+            <stop offset="0%" stopColor="rgba(255,255,255,0.55)" />
             <stop offset="80%" stopColor="rgba(255,255,255,0)" />
           </linearGradient>
         </defs>
         <path
           d="M 25 10 L 25 180 Q 25 210 40 210 Q 55 210 55 180 L 55 10 Z"
-          fill="hsl(var(--card))"
-          stroke="hsl(var(--border))"
-          strokeWidth="1.5"
+          fill="var(--color-card)"
+          stroke="var(--color-border)"
+          strokeWidth="2"
         />
         <path
           d="M 28 100 L 28 180 Q 28 207 40 207 Q 52 207 52 180 L 52 100 Z"
           fill={color}
-          opacity="0.85"
+          opacity="0.88"
           style={{ transition: "fill 0.6s ease, opacity 0.4s ease" }}
         />
         <path
@@ -188,7 +188,7 @@ function TestTube({ color, label }: { color: string; label: string }) {
           pointerEvents="none"
         />
       </svg>
-      <p className="max-w-[16ch] text-center text-xs text-muted-foreground">{label}</p>
+      <p className="max-w-[28ch] text-center text-base font-medium text-foreground">{label}</p>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
-import { ArrowLeft, Target, Clock, BookOpen } from "lucide-react";
+import { ArrowLeft, Target, Clock, Sparkles, GraduationCap } from "lucide-react";
 import { getNoteByTopic, listNoteFiles } from "@/lib/content/loadNotes";
 import { getTopic, getUnit } from "@/lib/content/syllabus";
 import { mdxComponents } from "@/components/notes/MDXComponents";
@@ -38,37 +38,37 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
   if (!note || !unitMeta || !topicMeta) notFound();
 
   return (
-    <article className="container mx-auto max-w-3xl px-4 py-10">
+    <article className="container mx-auto max-w-3xl px-4 py-10 sm:py-12">
       <div className="mb-6">
         <Link
           href="/notes"
-          className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground"
+          className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition hover:text-foreground"
         >
-          <ArrowLeft className="h-3.5 w-3.5" /> Back to all notes
+          <ArrowLeft className="h-4 w-4" /> All notes
         </Link>
       </div>
-      <header className="mb-8">
-        <Badge variant="secondary" className="mb-3 rounded-md">
-          {unit.replace("-", " ").toUpperCase()} · {unitMeta.title}
+      <header className="mb-10">
+        <Badge variant="secondary" className="mb-4 rounded-md uppercase tracking-wider">
+          {unit.replace("-", " ")} · {unitMeta.title}
         </Badge>
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{note.frontmatter.title}</h1>
-        <p className="mt-2 text-muted-foreground">{note.frontmatter.blurb}</p>
-        <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
-          <span className="inline-flex items-center gap-1">
-            <Clock className="h-3 w-3" /> ~{note.frontmatter.estimatedMinutes} min
+        <h1 className="text-4xl font-bold tracking-tight leading-tight sm:text-5xl">{note.frontmatter.title}</h1>
+        <p className="mt-3 text-lg leading-relaxed text-muted-foreground">{note.frontmatter.blurb}</p>
+        <div className="mt-5 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+          <span className="inline-flex items-center gap-1.5">
+            <Clock className="h-4 w-4" /> ~{note.frontmatter.estimatedMinutes} min read
           </span>
-          <span className="inline-flex items-center gap-1">
-            <BookOpen className="h-3 w-3" /> +{note.frontmatter.xp} XP on completion
+          <span className="inline-flex items-center gap-1.5">
+            <Sparkles className="h-4 w-4" /> +{note.frontmatter.xp} XP on completion
           </span>
         </div>
-        <div className="mt-6 rounded-lg border bg-card p-4">
-          <div className="flex items-center gap-2 text-xs uppercase tracking-wide text-muted-foreground">
-            <Target className="h-3.5 w-3.5" /> Learning objectives
+        <div className="mt-6 rounded-xl border-2 bg-card p-5">
+          <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-primary">
+            <Target className="h-4 w-4" /> Learning objectives
           </div>
-          <ul className="mt-2 space-y-1.5 text-sm">
+          <ul className="mt-3 space-y-2 text-[15px]">
             {note.frontmatter.learningObjectives.map((lo, i) => (
-              <li key={i} className="flex gap-2">
-                <span className="text-primary">{i + 1}.</span>
+              <li key={i} className="flex gap-3 leading-relaxed">
+                <span className="grid h-6 w-6 shrink-0 place-items-center rounded-md bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
                 <span>{lo}</span>
               </li>
             ))}
@@ -76,7 +76,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
         </div>
       </header>
 
-      <div className="text-[15px] leading-relaxed">
+      <div className="prose-tuned">
         <MDXRemote
           source={note.body}
           components={{ ...mdxComponents, InlineCheckpoint }}
@@ -89,15 +89,15 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
         />
       </div>
 
-      <footer className="mt-12 rounded-lg border bg-card p-4 text-sm">
-        <p className="font-medium">Next up</p>
-        <p className="mt-1 text-muted-foreground">
-          Test what you just read in the{" "}
-          <Link className="text-primary hover:underline" href={`/quiz/adaptive?unit=${unit}`}>
-            adaptive quiz for {unitMeta.title}
-          </Link>
-          , or browse the full{" "}
-          <Link className="text-primary hover:underline" href="/notes">
+      <footer className="mt-12 rounded-xl border-2 bg-card p-6">
+        <p className="text-base font-semibold">What next?</p>
+        <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
+          Test what you just read with the{" "}
+          <Link className="font-medium text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary" href={`/quiz/adaptive?unit=${unit}`}>
+            adaptive quiz <GraduationCap className="-mt-0.5 inline-block h-4 w-4" />
+          </Link>{" "}
+          for {unitMeta.title}, or browse the full{" "}
+          <Link className="font-medium text-primary underline decoration-primary/40 underline-offset-2 hover:decoration-primary" href="/notes">
             note library
           </Link>
           .
