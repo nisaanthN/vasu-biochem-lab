@@ -38,7 +38,6 @@ export function QuizRunner({ pool, mode, unitFilter }: Props) {
   const recordMcqAttempt = useProgressStore((s) => s.recordMcqAttempt);
   const recordPerfectQuiz = useProgressStore((s) => s.recordPerfectQuiz);
   const [picked, setPicked] = useState<number | null>(null);
-  const [confidence, setConfidence] = useState<"guessed" | "knew" | null>(null);
   const [perfectAwarded, setPerfectAwarded] = useState(false);
 
   useEffect(() => {
@@ -87,7 +86,6 @@ export function QuizRunner({ pool, mode, unitFilter }: Props) {
         onReset={() => {
           quizReset();
           setPicked(null);
-          setConfidence(null);
           setPerfectAwarded(false);
         }}
         onMount={onAwardPerfect}
@@ -104,21 +102,19 @@ export function QuizRunner({ pool, mode, unitFilter }: Props) {
     if (answered) return; // prevent double submit
     const elapsed = Date.now() - quizQuestionStartedAt;
     const isCorrect = picked === q.correctIndex;
-    quizAnswer(picked, confidence ?? undefined);
+    quizAnswer(picked);
     recordMcqAttempt({
       questionId: q.id,
       tagId: getTagId(q.unitId, q.subTopicId),
       correct: isCorrect,
       mode,
       elapsedMs: elapsed,
-      confidence: confidence ?? undefined,
     });
   };
 
   const nextQ = () => {
     quizNext();
     setPicked(null);
-    setConfidence(null);
   };
 
   const correct = submitted && picked === q.correctIndex;
@@ -179,28 +175,6 @@ export function QuizRunner({ pool, mode, unitFilter }: Props) {
               );
             })}
           </div>
-          {!answered && picked !== null && (
-            <div className="rounded-lg border bg-muted/30 p-4">
-              <p className="text-sm font-semibold">How confident are you?</p>
-              <p className="mt-0.5 text-xs text-muted-foreground">Optional — it helps the spaced-repetition engine schedule reviews better.</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                <Button
-                  size="sm"
-                  variant={confidence === "knew" ? "default" : "outline"}
-                  onClick={() => setConfidence("knew")}
-                >
-                  I knew it
-                </Button>
-                <Button
-                  size="sm"
-                  variant={confidence === "guessed" ? "default" : "outline"}
-                  onClick={() => setConfidence("guessed")}
-                >
-                  I guessed
-                </Button>
-              </div>
-            </div>
-          )}
           {answered && (
             <div className={cn(
               "rounded-lg border-2 p-5",
