@@ -91,11 +91,29 @@ docs/
 └── PROJECT_STRUCTURE.md      This file
 ```
 
-PDFs and DOCX files are generated from the `.md` sources. Regenerate them anytime with:
+PDFs and DOCX files are generated from the `.md` sources. The PDFs use `docs/print.css` for styling (colored headers, code blocks, links, tables, page numbers). Regenerate them with:
 
 ```bash
-pandoc docs/HOW_TO_USE.md --pdf-engine=weasyprint -o docs/HOW_TO_USE.pdf
+# Styled PDF (preserves links, colors, code blocks, table styling)
+pandoc docs/HOW_TO_USE.md \
+  --css=docs/print.css \
+  --pdf-engine=weasyprint \
+  --highlight-style=tango \
+  --standalone \
+  -o docs/HOW_TO_USE.pdf
+
+# Editable DOCX (open in Word / Pages / Google Docs)
 pandoc docs/HOW_TO_USE.md -o docs/HOW_TO_USE.docx
+```
+
+You need `pandoc` (any) and `weasyprint` (for PDF) — install both with `brew install pandoc weasyprint`. To regenerate all three docs at once:
+
+```bash
+for d in HOW_TO_USE TECHNICAL_GUIDE EVALUATION_GUIDE; do
+  pandoc "docs/$d.md" --css=docs/print.css --pdf-engine=weasyprint \
+    --highlight-style=tango --standalone -o "docs/$d.pdf"
+  pandoc "docs/$d.md" -o "docs/$d.docx"
+done
 ```
 
 ---
