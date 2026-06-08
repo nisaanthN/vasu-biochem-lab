@@ -56,6 +56,17 @@ export const EXPERIMENTS: ExperimentMeta[] = [
     xp: 50,
     difficulty: "medium",
   },
+  {
+    slug: "volumetric-titration",
+    title: "Volumetric titration — standardization of HCl",
+    unitId: "unit-3",
+    subTopicId: "enzyme-classification",
+    objective:
+      "A full guided wet-lab simulation: weigh Na₂CO₃, prepare the solution, fill the burette with HCl, titrate to a methyl orange endpoint, and calculate the molarity of HCl.",
+    estimatedMinutes: 15,
+    xp: 80,
+    difficulty: "hard",
+  },
 ];
 
 export function getExperiment(slug: string) {

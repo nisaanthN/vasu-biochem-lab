@@ -64,7 +64,21 @@ const FEATURES = [
 
 export default function HomePage() {
   return (
-    <div className="container mx-auto max-w-6xl px-4 py-10 sm:py-16">
+    <div className="container mx-auto max-w-6xl px-4 py-10 sm:py-14">
+      <div className="mb-8 rounded-2xl border-2 bg-card p-5">
+        <div className="flex flex-col items-center gap-3 text-center sm:flex-row sm:items-start sm:justify-between sm:text-left">
+          <div>
+            <p className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Shri Vishnu College of Pharmacy</p>
+            <p className="mt-1 text-sm text-muted-foreground">(Autonomous) · Bhimavaram, Andhra Pradesh, India</p>
+            <p className="text-xs text-muted-foreground">B.Pharm Programme · Approved by PCI, AICTE, NAAC, NBA</p>
+          </div>
+          <div className="rounded-lg border bg-muted/40 px-4 py-2 text-xs">
+            <p className="text-muted-foreground">Project by</p>
+            <p className="font-semibold text-foreground">Durga Bhavani</p>
+            <p className="text-muted-foreground">B.Pharm Student</p>
+          </div>
+        </div>
+      </div>
       <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-br from-primary/10 via-card to-card p-6 sm:p-10">
         <div className="grid gap-6 lg:grid-cols-5 lg:gap-10">
           <div className="lg:col-span-3">

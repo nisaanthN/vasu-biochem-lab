@@ -12,11 +12,11 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="container mx-auto max-w-4xl px-4 py-10">
-      <div className="mb-8">
-        <p className="text-xs uppercase tracking-wide text-muted-foreground">About</p>
-        <h1 className="mt-1 text-3xl font-bold tracking-tight sm:text-4xl">About BioPharm Lab</h1>
-        <p className="mt-2 max-w-2xl text-muted-foreground">
-          An AI-based biochemistry learning and virtual laboratory platform for Indian B.Pharm students, aligned with the PCI BP203T syllabus. Designed as a credit-worthy student project.
+      <div className="mb-10">
+        <p className="text-sm font-semibold uppercase tracking-wider text-primary">About</p>
+        <h1 className="mt-2 text-4xl font-bold tracking-tight leading-tight sm:text-5xl">BioPharm Lab</h1>
+        <p className="mt-3 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          An AI-based biochemistry learning and virtual laboratory platform for Indian B.Pharm students. Aligned with the PCI BP203T syllabus and developed as a credit-worthy academic project at Shri Vishnu College of Pharmacy (Autonomous), Bhimavaram.
         </p>
       </div>
 
@@ -138,20 +138,35 @@ export default function AboutPage() {
       </section>
 
       <section>
-        <Card>
+        <Card className="border-2 border-primary/30">
           <CardHeader>
-            <CardTitle className="text-base">Credits</CardTitle>
+            <CardTitle className="text-lg">Project Credits</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-2 text-sm text-muted-foreground">
-            <p>
-              <strong>Submitted as:</strong> Pharmacy B.Pharm student project for assistant-professor credits.
-            </p>
-            <p>
-              <strong>Built with:</strong> open-source tools listed above. No paid services, no proprietary datasets.
-            </p>
-            <p>
-              <strong>Content:</strong> all biochemistry content authored from the listed textbooks under fair-use educational interpretation. Where specific data points (P/O ratios, Km values) are quoted, sources are cited inline.
-            </p>
+          <CardContent className="space-y-4 text-sm">
+            <div className="rounded-xl border bg-muted/40 p-4">
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">Developed by</p>
+              <p className="mt-1 text-xl font-bold text-foreground">Durga Bhavani</p>
+              <p className="text-sm text-muted-foreground">B.Pharm Student</p>
+            </div>
+            <div className="rounded-xl border bg-muted/40 p-4">
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">Institution</p>
+              <p className="mt-1 text-base font-semibold text-foreground">Shri Vishnu College of Pharmacy</p>
+              <p className="text-sm text-muted-foreground">(Autonomous) — B.Pharm Programme</p>
+              <p className="text-sm text-muted-foreground">Green Meadows Campus, Vishnupur, Bhimavaram — 534202</p>
+              <p className="text-sm text-muted-foreground">West Godavari, Andhra Pradesh, India</p>
+              <p className="mt-2 text-xs text-muted-foreground">Approved by PCI, AICTE, NAAC, NBA. Listed in NIRF rankings.</p>
+            </div>
+            <div className="text-muted-foreground">
+              <p>
+                <strong className="text-foreground">Submitted as:</strong> an academic project for assistant-professor credits in B.Pharm Biochemistry (BP203T).
+              </p>
+              <p className="mt-2">
+                <strong className="text-foreground">Built with:</strong> open-source tools listed above. No paid services, no proprietary datasets.
+              </p>
+              <p className="mt-2">
+                <strong className="text-foreground">Content:</strong> biochemistry content authored from the listed textbooks under fair-use educational interpretation. Specific data points (P/O ratios, Km values) are cited inline.
+              </p>
+            </div>
           </CardContent>
         </Card>
       </section>

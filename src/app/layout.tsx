@@ -17,12 +17,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "BioPharm Lab — AI Biochemistry Learning & Virtual Laboratory",
+    default: "BioPharm Lab — AI Biochemistry Learning & Virtual Laboratory · SVCP",
     template: "%s · BioPharm Lab",
   },
   description:
-    "AI-Based Biochemistry Learning and Virtual Laboratory Platform for Pharmacy Students, aligned with PCI B.Pharm BP203T syllabus. Offline-first, free, and open.",
-  keywords: ["biochemistry", "pharmacy", "B.Pharm", "BP203T", "virtual lab", "spaced repetition"],
+    "AI-Based Biochemistry Learning and Virtual Laboratory Platform for Pharmacy Students, aligned with PCI B.Pharm BP203T syllabus. Developed by Durga Bhavani, Shri Vishnu College of Pharmacy (Autonomous). Offline-first, free, and open.",
+  keywords: ["biochemistry", "pharmacy", "B.Pharm", "BP203T", "virtual lab", "spaced repetition", "Shri Vishnu College of Pharmacy", "SVCP", "Durga Bhavani"],
+  authors: [{ name: "Durga Bhavani" }],
 };
 
 export default function RootLayout({

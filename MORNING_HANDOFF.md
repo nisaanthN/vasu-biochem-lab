@@ -40,7 +40,9 @@ The GitHub repo is already pushed and public. The fastest path is:
 5. Accept defaults (Vercel auto-detects Next.js)
 6. Click **Deploy**
 
-In ~90 seconds, Vercel gives you a URL — try `biochem-lab.vercel.app` as the project name during import. If it's taken, Vercel will suggest an alternate.
+In ~90 seconds, Vercel gives you a URL. **Recommended project name during import**: `biochem-virtual-lab` (so the URL becomes `biochem-virtual-lab.vercel.app`). Fallbacks if taken: `pharma-biochem-lab`, `svcp-biochem-lab`, `biopharm-virtual-lab`.
+
+> Note: deliberately avoid `vasu-*` in the public URL since this is Durga Bhavani's submission to SVCP.
 
 **Option B — Via CLI (if you prefer terminal):**
 

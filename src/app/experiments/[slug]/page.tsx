@@ -5,6 +5,7 @@ import { EnzymeInhibitionSim } from "@/components/experiments/EnzymeInhibitionSi
 import { SugarTestSim } from "@/components/experiments/SugarTestSim";
 import { TranscriptionSim } from "@/components/experiments/TranscriptionSim";
 import { GlycolysisSim } from "@/components/experiments/GlycolysisSim";
+import { TitrationSim } from "@/components/experiments/TitrationSim";
 
 export function generateStaticParams() {
   return EXPERIMENTS.map((e) => ({ slug: e.slug }));
@@ -32,6 +33,8 @@ export default async function ExperimentPage({ params }: { params: Promise<{ slu
       return <TranscriptionSim />;
     case "glycolysis-walkthrough":
       return <GlycolysisSim />;
+    case "volumetric-titration":
+      return <TitrationSim />;
     default:
       notFound();
   }
