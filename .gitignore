@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated doc artifacts (source is the .md files; PDF/DOCX are produced at packaging time)
+docs/*.pdf
+docs/*.docx
