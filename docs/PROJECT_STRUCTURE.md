@@ -78,43 +78,14 @@ Anything in `public/` is served as-is at the URL root (e.g., `public/foo.svg` �
 
 ```
 docs/
-├── HOW_TO_USE.md             Student-facing guide (sources)
-├── HOW_TO_USE.pdf            Read-only distribution
-├── HOW_TO_USE.docx           Editable version (open in Word / Pages / Google Docs)
-├── TECHNICAL_GUIDE.md        Developer / instructor guide (sources)
-├── TECHNICAL_GUIDE.pdf       Read-only distribution
-├── TECHNICAL_GUIDE.docx      Editable version
-├── EVALUATION_GUIDE.md       Rubric mapping for the evaluating professor (sources)
-├── EVALUATION_GUIDE.pdf      Read-only distribution
-├── EVALUATION_GUIDE.docx     Editable version
+├── HOW_TO_USE.md             Student-facing guide
+├── TECHNICAL_GUIDE.md        Developer / instructor guide
+├── EVALUATION_GUIDE.md       Rubric mapping for the evaluating professor
 ├── MORNING_HANDOFF.md        Original deployment hand-off notes (historical)
 └── PROJECT_STRUCTURE.md      This file
 ```
 
-PDFs and DOCX files are generated from the `.md` sources. The PDFs use `docs/print.css` for styling (colored headers, code blocks, links, tables, page numbers). Regenerate them with:
-
-```bash
-# Styled PDF (preserves links, colors, code blocks, table styling)
-pandoc docs/HOW_TO_USE.md \
-  --css=docs/print.css \
-  --pdf-engine=weasyprint \
-  --highlight-style=tango \
-  --standalone \
-  -o docs/HOW_TO_USE.pdf
-
-# Editable DOCX (open in Word / Pages / Google Docs)
-pandoc docs/HOW_TO_USE.md -o docs/HOW_TO_USE.docx
-```
-
-You need `pandoc` (any) and `weasyprint` (for PDF) — install both with `brew install pandoc weasyprint`. To regenerate all three docs at once:
-
-```bash
-for d in HOW_TO_USE TECHNICAL_GUIDE EVALUATION_GUIDE; do
-  pandoc "docs/$d.md" --css=docs/print.css --pdf-engine=weasyprint \
-    --highlight-style=tango --standalone -o "docs/$d.pdf"
-  pandoc "docs/$d.md" -o "docs/$d.docx"
-done
-```
+The Markdown files are the source of truth. Convert to PDF / DOCX / HTML using whatever tool you prefer — Claude Desktop, online converters, Word's import, Google Docs' import, etc.
 
 ---
 
