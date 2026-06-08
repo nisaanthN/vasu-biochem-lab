@@ -146,19 +146,19 @@ export default function AboutPage() {
             <div className="rounded-xl border bg-muted/40 p-4">
               <p className="text-xs uppercase tracking-wider text-muted-foreground">Developed by</p>
               <p className="mt-1 text-xl font-bold text-foreground">Durga Bhavani</p>
-              <p className="text-sm text-muted-foreground">B.Pharm Student</p>
+              <p className="text-sm text-muted-foreground">Assistant Professor</p>
             </div>
             <div className="rounded-xl border bg-muted/40 p-4">
               <p className="text-xs uppercase tracking-wider text-muted-foreground">Institution</p>
               <p className="mt-1 text-base font-semibold text-foreground">Shri Vishnu College of Pharmacy</p>
-              <p className="text-sm text-muted-foreground">(Autonomous) — B.Pharm Programme</p>
+              <p className="text-sm text-muted-foreground">(Autonomous)</p>
               <p className="text-sm text-muted-foreground">Green Meadows Campus, Vishnupur, Bhimavaram — 534202</p>
               <p className="text-sm text-muted-foreground">West Godavari, Andhra Pradesh, India</p>
               <p className="mt-2 text-xs text-muted-foreground">Approved by PCI, AICTE, NAAC, NBA. Listed in NIRF rankings.</p>
             </div>
             <div className="text-muted-foreground">
               <p>
-                <strong className="text-foreground">Submitted as:</strong> an academic project for assistant-professor credits in B.Pharm Biochemistry (BP203T).
+                <strong className="text-foreground">Purpose:</strong> teaching and self-study companion for B.Pharm 2nd-semester Biochemistry (BP203T), aligned with the PCI syllabus.
               </p>
               <p className="mt-2">
                 <strong className="text-foreground">Built with:</strong> open-source tools listed above. No paid services, no proprietary datasets.

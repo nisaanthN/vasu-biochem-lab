@@ -22,7 +22,7 @@ export function Footer() {
               Developed by <span className="text-primary">Durga Bhavani</span>
             </p>
             <p className="text-xs text-muted-foreground">
-              B.Pharm Student · Shri Vishnu College of Pharmacy (Autonomous)
+              Assistant Professor · Shri Vishnu College of Pharmacy (Autonomous)
             </p>
             <p className="text-xs text-muted-foreground">
               Bhimavaram, Andhra Pradesh · Approved by PCI, AICTE, NAAC
@@ -52,7 +52,7 @@ export function Footer() {
               PCI India
             </a>
           </div>
-          <p>© {new Date().getFullYear()} — Educational student project, all rights reserved.</p>
+          <p>© {new Date().getFullYear()} — Educational use, all rights reserved.</p>
         </div>
       </div>
     </footer>

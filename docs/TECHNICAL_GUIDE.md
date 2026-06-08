@@ -10,7 +10,7 @@
 | Attribute | Value |
 | :--- | :--- |
 | **Project** | BioPharm Lab — AI Biochemistry Learning & Virtual Laboratory |
-| **Developer** | Durga Bhavani (B.Pharm Student) |
+| **Developer** | Durga Bhavani (Assistant Professor) |
 | **Institution** | Shri Vishnu College of Pharmacy (Autonomous), Bhimavaram |
 | **Syllabus** | PCI B.Pharm Paper BP203T — Biochemistry (2nd semester, 4 credits) |
 | **Hosting** | Vercel (free tier) |

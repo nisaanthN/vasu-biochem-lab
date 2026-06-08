@@ -1,7 +1,7 @@
 # BioPharm Lab
 
 > **AI-Based Biochemistry Learning and Virtual Laboratory Platform**
-> Developed by **Durga Bhavani**, B.Pharm Student
+> Developed by **Durga Bhavani**, Assistant Professor
 > Shri Vishnu College of Pharmacy (Autonomous), Bhimavaram, Andhra Pradesh
 
 A free, offline-first study companion aligned with the PCI B.Pharm 2nd-semester paper **BP203T — Biochemistry** (45 hours, 4 credits).
@@ -128,9 +128,9 @@ No paid services. No backend. No database. No external API calls. Everything run
 
 ## Credits
 
-- **Developed by**: Durga Bhavani — B.Pharm Student
+- **Developed by**: Durga Bhavani — Assistant Professor
 - **Institution**: Shri Vishnu College of Pharmacy (Autonomous), Bhimavaram, West Godavari, Andhra Pradesh, India
 - **Approved by**: PCI, AICTE, NAAC, NBA. Listed in NIRF.
 - **License**: Open for educational use. Content authored from listed textbooks under fair-use educational interpretation.
 
-Submitted as an academic project for assistant-professor credits in B.Pharm Biochemistry (BP203T).
+Built to support B.Pharm 2nd-semester Biochemistry (BP203T) teaching and self-study.

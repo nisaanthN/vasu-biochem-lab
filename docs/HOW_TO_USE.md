@@ -299,7 +299,7 @@ A: This was a known bug in v1 that's been fixed. If you still see it, refresh th
 A: Not in v1. Future versions may add export. For now, your data lives in your browser.
 
 **Q: How do I report a bug or suggest an improvement?**
-A: This is a student project — feedback goes to the developer (Durga Bhavani). Check the About page for contact details.
+A: Feedback goes to the developer (Durga Bhavani, Assistant Professor). Check the About page for contact details.
 
 ---
 
@@ -340,4 +340,4 @@ Good luck with BP203T — and have fun. 🧬
 
 ---
 
-*BioPharm Lab — Developed by Durga Bhavani, B.Pharm Student, Shri Vishnu College of Pharmacy (Autonomous), Bhimavaram.*
+*BioPharm Lab — Developed by Durga Bhavani, Assistant Professor, Shri Vishnu College of Pharmacy (Autonomous), Bhimavaram.*

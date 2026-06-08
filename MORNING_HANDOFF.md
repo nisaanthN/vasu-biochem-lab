@@ -128,7 +128,7 @@ Opens at `http://localhost:3000`. All features work locally without a server.
 1. **Fix the MDX defensive workaround.** A couple of notes (dna-rna-structure, etc-oxphos) had JSX-in-MDX parsing issues with unicode characters inside `<InlineCheckpoint>` `options` arrays. I made `InlineCheckpoint` defensive — it now returns `null` if `options` is undefined, so the build succeeds. But those specific checkpoints don't render. The actual notes still work; only the inline mini-quiz at the end of those two notes is missing. Worth fixing in v2 by either reformatting the JSX or moving checkpoint data to JSON files referenced by ID.
 2. **Mobile UX polish.** Slider-heavy experiments work but are cramped on phones. v1 targets tablet+.
 3. **More content.** Architecture supports incremental expansion — adding more MDX files in `src/content/notes/` and MCQs in `src/content/mcq/` requires no engine changes.
-4. **Author credit.** Currently a generic "Pharmacy B.Pharm Student Project" placeholder. When ready, replace in `src/app/about/page.tsx` and the README.
+4. **Author credit.** ✅ Resolved — credited to Durga Bhavani, Assistant Professor, Shri Vishnu College of Pharmacy (Autonomous).
 5. **Custom domain.** If you want `biopharmlab.com` or similar, buy via Namecheap/GoDaddy and add to Vercel project settings (~5 min).
 
 ---

@@ -70,12 +70,12 @@ export default function HomePage() {
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Shri Vishnu College of Pharmacy</p>
             <p className="mt-1 text-sm text-muted-foreground">(Autonomous) · Bhimavaram, Andhra Pradesh, India</p>
-            <p className="text-xs text-muted-foreground">B.Pharm Programme · Approved by PCI, AICTE, NAAC, NBA</p>
+            <p className="text-xs text-muted-foreground">Approved by PCI, AICTE, NAAC, NBA</p>
           </div>
           <div className="rounded-lg border bg-muted/40 px-4 py-2 text-xs">
-            <p className="text-muted-foreground">Project by</p>
+            <p className="text-muted-foreground">Developed by</p>
             <p className="font-semibold text-foreground">Durga Bhavani</p>
-            <p className="text-muted-foreground">B.Pharm Student</p>
+            <p className="text-muted-foreground">Assistant Professor</p>
           </div>
         </div>
       </div>
